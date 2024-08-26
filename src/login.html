@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/10851f277d913a0868eb0ecf5e01fb29?family=Circe+Rounded+DM+Web"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="login">
+      <div class="login__container">
+        <form class="form">
+          <h1 class="login__title">Вход или регистрация</h1>
+          <label class="login__label"
+            ><input type="text" placeholder="Ваше имя"
+          /></label>
+          <label class="login__label"
+            ><input type="text" placeholder="Ваш номер телефона"
+          /></label>
+          <div class="login__agree">
+            <label class="login__label-check">
+              <input
+                class="login__check-input js-login__check-input"
+                type="checkbox"
+              />
+              <span class="checkmark"></span>
+              <p>
+                Даю согласие на обработку персональных данных в соответствии c
+                <a href="https://www.eapteka.ru/company/policy/"
+                  >политикой конфиденциальности</a
+                >.
+              </p>
+            </label>
+          </div>
+          <button class="login__button js-login__button">
+            <span>Получить код по СМС</span>
+            <svg
+              width="361"
+              height="55"
+              viewBox="0 0 361 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M180.5 0.413057C232.765 0.336102 322.982 -1.58876 346.051 4.39624C364.426 6.3994 366.176 43.9566 349.551 49.465C337.663 55.3602 326.645 54.3521 170.5 54C63.2073 53.7586 31.2866 55.3313 13.1157 49.9643C-3.07175 45.1832 -4.82174 11.4056 10.9282 4.89578C20.9906 -2.11504 131.18 0.485724 180.5 0.413057Z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
