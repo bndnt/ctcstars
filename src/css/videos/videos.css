@@ -33,7 +33,7 @@
   content: '';
   width: 30px;
   height: 28px;
-  background-image: url(../../img/not-found.svg);
+  background-image: url(./../img/not-found.svg);
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;
