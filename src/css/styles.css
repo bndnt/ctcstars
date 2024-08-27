@@ -5,11 +5,14 @@
   |============================
 */
 /* Common styles */
+
+/* @import url(https://db.onlinewebfonts.com/c/10851f277d913a0868eb0ecf5e01fb29?family=Circe+Rounded+DM+Web); */
+
 @import url('./general.css');
 
 @import url('./reset.css');
 @import url('./container.css');
 
 /* Sections style */
-@import url('./header.css');
+@import url('./videos/videos.css');
 @import url('./footer.css');

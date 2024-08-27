@@ -1,0 +1,42 @@
+@import url('./header.css');
+@import url('./videos-result.css');
+
+.videos-body {
+  background-color: var(--darkBlue);
+}
+.videos-not-found {
+  margin-top: 12px;
+  position: relative;
+}
+.videos-not-found__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 590px;
+  padding: 0 15px;
+}
+.videos-not-found__block {
+  border-radius: 10px;
+  width: 560px;
+  height: 71px;
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  text-align: center;
+  padding: 26px 65px 25px 97px;
+  position: relative;
+}
+.videos-not-found__block:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 28px;
+  background-image: url(../../img/not-found.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -14px;
+}

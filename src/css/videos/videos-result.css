@@ -1,0 +1,171 @@
+.videos-result {
+}
+.videos-result__container {
+  width: 100%;
+  margin: 33px auto 0;
+  max-width: 1190px;
+  padding: 0 15px;
+}
+.videos-result__list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.videos-result__item {
+  width: 260px;
+  height: 460px;
+  position: relative;
+  background-color: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.videos-result__item::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 231px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  /* background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); */
+  background-image: url(../../img/videobg.svg);
+  background-size: cover;
+}
+.videos-result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.videos-result__info {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 0 15px 10px 12px;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+}
+.videos-result__author {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 9px;
+  left: 12px;
+}
+
+.videos-result__author-nickname {
+  display: block;
+}
+.videos-result__author-city {
+  display: block;
+}
+.videos-result__author-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--pink);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.videos-result__author-icon span {
+  font-family: 'Circe Rounded DM Web';
+}
+.videos-result__author-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videos-result__author-nickname {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--white);
+  max-width: 90px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: 'myfontBold';
+}
+.videos-result__author-city {
+  font-family: 'myfontLight';
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+}
+.videos-result__likes {
+  display: flex;
+  align-items: center;
+}
+.videos-result__likes span:nth-child(2) {
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  color: #fff;
+}
+.videos-result__song-info {
+  display: flex;
+  align-items: center;
+}
+.videos-result__song-img {
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.videos-result__song-singer {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  font-family: 'myfontExtraBold';
+}
+.videos-result__song-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  font-family: 'myfontLight';
+}
+
+.videos-result__play {
+  position: absolute;
+  border-radius: 50%;
+  padding: 20px 15px 15px 22px;
+  background-image: url(../../img/play-circle.svg);
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 0.25s ease-in;
+}
+.videos-result__play a {
+  width: 100%;
+  height: 100px;
+}
+.videos-result__play:hover {
+  background-color: #fff;
+}
+.videos-result__play img {
+  width: 29px;
+  height: 32px;
+  position: relative;
+  z-index: 3;
+}
