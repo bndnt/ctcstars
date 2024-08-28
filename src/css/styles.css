@@ -15,4 +15,5 @@
 
 /* Sections style */
 @import url('./videos/videos.css');
+@import url('./video/video.css');
 @import url('./footer.css');
