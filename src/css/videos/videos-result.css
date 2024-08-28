@@ -149,7 +149,6 @@
 .videos-result__play {
   position: absolute;
   border-radius: 50%;
-  padding: 20px 15px 15px 26px;
   background-image: url(../../img/play-circle.svg);
   width: 70px;
   height: 70px;
@@ -160,8 +159,10 @@
   transition: all 0.25s ease-in;
 }
 .videos-result__play a {
+  padding: 20px 15px 15px 26px;
+  display: inline-block;
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 .videos-result__play:hover {
   background-color: #fff;
