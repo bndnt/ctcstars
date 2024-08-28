@@ -1,6 +1,6 @@
 .header {
   margin-top: 47px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 .header__container {
   margin: 0 auto;
@@ -11,7 +11,7 @@
 .header__wrapper {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 14px;
-  padding: 8px 47px 8px 18px;
+  padding: 8px 37px 8px 13px;
 }
 .header__block {
   display: flex;
@@ -43,6 +43,7 @@
   padding: 15px;
   transition: background-color 0.25s ease-in;
   height: 44px;
+  margin-left: -32px;
 }
 
 .header__form:hover input::placeholder,

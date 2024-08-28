@@ -18,21 +18,21 @@
   border-radius: 10px;
   width: 560px;
   height: 71px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: #fff;
+  color: var(--darkBlue);
   text-align: center;
-  padding: 26px 65px 25px 97px;
+  padding: 26px 96px 25px 97px;
   position: relative;
 }
 .videos-not-found__block:after {
   display: block;
   position: absolute;
   content: '';
-  width: 30px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   background-image: url(../../img/not-found.svg);
   background-repeat: no-repeat;
   background-size: cover;
