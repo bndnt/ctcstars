@@ -67,7 +67,7 @@
   object-fit: cover;
 }
 .video__author-name {
-  font-family: 'myfontBold';
+  font-family: 'myfontExtraBold';
   font-size: 19px;
   line-height: 1.25;
   color: #fff;
@@ -76,7 +76,7 @@
   font-size: 16px;
   line-height: 1.25;
   color: #fff;
-  font-family: 'myfontLight';
+  /* font-family: 'myfontLight'; */
 }
 .video__bottom {
   position: absolute;

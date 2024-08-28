@@ -1,3 +1,30 @@
 .video-header__back {
   display: block;
+  margin-left: -5px;
+}
+.video-header {
+  margin-top: 0;
+  position: fixed;
+  left: 50%;
+  top: 46px;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 5;
+}
+.video-header .header__block {
+  height: 68px;
+  padding: 8px 37px 8px 13px;
+}
+.header__wrapper {
+  padding: 0;
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(50px);
+  -webkit-font-smoothing: antialiased;
+}
+.video-header .header__form {
+  margin-left: 86px;
+}
+.video-main {
+  margin-top: 154px;
 }

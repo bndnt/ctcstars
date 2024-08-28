@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add like
         post.classList.add('liked');
         likesContainer.classList.add('active');
-        likeText.textContent = 'голос оставлен';
+        likeText.textContent = 'ГОЛОС ПРИНЯТ';
 
         // Show the hearts container and start animation
         heartsContainer.style.display = 'flex';
