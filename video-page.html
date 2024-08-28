@@ -10,9 +10,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/videos.css" />
-    <script type="module" crossorigin src="/ctcstars/assets/styles-BFNXYAfa.js"></script>
-    <script type="module" crossorigin src="/ctcstars/assets/main-fRvV2CWl.js"></script>
-    <link rel="stylesheet" crossorigin href="/ctcstars/assets/styles-DvQ52opK.css">
+    <script type="module" crossorigin src="/ctcstars/assets/styles-CpgilJX0.js"></script>
+    <script type="module" crossorigin src="/ctcstars/assets/main-5p_8DYA8.js"></script>
+    <link rel="stylesheet" crossorigin href="/ctcstars/assets/styles-DTBXl9FD.css">
   </head>
   <body class="video-body">
     <main>
@@ -31,8 +31,6 @@
             >
               <path
                 d="M21.0005 27.0002L13.5005 18.0002L21.0005 9.00024"
-                stroke="#E1F0FF"
-                stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
@@ -228,7 +226,7 @@
                 </div>
                 <div class="video__like-info"><span>1235</span> лайков</div>
               </div>
-              <a href="" class="video__share">
+              <a href="" class="video__share js-video__share">
                 <div class="video__share-icon">
                   <svg fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -237,8 +235,47 @@
                     />
                   </svg>
                 </div>
-                <div class="video__share-text">Поделиться</div>
+                <div class="video__share-text js-video__share-text">
+                  Поделиться
+                </div>
               </a>
+            </div>
+            <div class="share-popup js-share-popup">
+              <input
+                class="share-popup-input js-share-popup-input"
+                type="text"
+                value="https://like.detmir.ru/proto/cEJyKj3v2554ImChsZdTbb/My-website-portfolio%"
+                id="myInput"
+              />
+              <div class="tooltip">
+                <button class="js-copy-btn">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5309 3.17432C19.975 3.17432 21.5312 4.72987 21.5312 10.1743C21.5312 15.6188 19.9151 17.1743 14.5309 17.1743C9.14663 17.1743 7.53125 15.6188 7.53125 10.1743C7.53125 4.72987 9.0868 3.17432 14.5309 3.17432Z"
+                      stroke="#0647C7"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.23383 9.17432C3.73068 10.2837 3.53125 11.7874 3.53125 13.7897C3.53125 19.5333 5.23539 21.1743 10.9155 21.1743C12.9126 21.1743 14.4183 20.9714 15.5312 20.4587"
+                      stroke="#0647C7"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="tooltiptext js-myTooltip"
+                    >Копировать ссылку</span
+                  >
+                </button>
+              </div>
             </div>
           </li>
           <li class="video-main__item">
@@ -342,7 +379,7 @@
                 </div>
                 <div class="video__like-info"><span>1235</span> лайков</div>
               </div>
-              <a href="" class="video__share">
+              <a href="" class="video__share js-video__share">
                 <div class="video__share-icon">
                   <svg fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -353,6 +390,44 @@
                 </div>
                 <div class="video__share-text">Поделиться</div>
               </a>
+            </div>
+            <div class="share-popup js-share-popup">
+              <input
+                class="share-popup-input js-share-popup-input"
+                type="text"
+                value="https://like.detmir.ru/proto/cEJyKj3v2554ImChsZdTbb/My-website-portfolio%"
+                id="myInput"
+              />
+
+              <div class="tooltip">
+                <button class="js-copy-btn">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5309 3.17432C19.975 3.17432 21.5312 4.72987 21.5312 10.1743C21.5312 15.6188 19.9151 17.1743 14.5309 17.1743C9.14663 17.1743 7.53125 15.6188 7.53125 10.1743C7.53125 4.72987 9.0868 3.17432 14.5309 3.17432Z"
+                      stroke="#0647C7"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.23383 9.17432C3.73068 10.2837 3.53125 11.7874 3.53125 13.7897C3.53125 19.5333 5.23539 21.1743 10.9155 21.1743C12.9126 21.1743 14.4183 20.9714 15.5312 20.4587"
+                      stroke="#0647C7"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="tooltiptext js-myTooltip"
+                    >Копировать ссылку</span
+                  >
+                </button>
+              </div>
             </div>
           </li>
         </ul>
