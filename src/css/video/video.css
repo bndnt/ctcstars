@@ -16,7 +16,7 @@
 .video-main__item {
   border-radius: 15px;
   background-color: #3267d1;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   height: 698px;
   position: relative;
@@ -242,6 +242,13 @@
 .video__share {
   display: flex;
   align-items: center;
+  transition: all 0.25s ease-in;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.video__share:hover,
+.video__share.active {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .video__share-icon {
@@ -259,4 +266,73 @@
   line-height: 1.25;
   text-align: center;
   color: #fff;
+}
+.share-popup {
+  position: absolute;
+  bottom: 0;
+  right: -257px;
+  width: 249px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+.share-popup.active {
+  display: flex;
+}
+.share-popup-input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 177px;
+  color: #0647c7;
+}
+.share-popup-input::placeholder {
+  font-size: 16px;
+  line-height: 1;
+  color: #0647c7;
+  font-family: 'myfontRegular';
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.tooltip button {
+  position: relative;
+  border-radius: 0 10px 10px 0;
+  padding: 9px;
+  background-color: #e1f0ff;
+  width: 42px;
+  height: 42px;
+}
+.tooltiptext {
+  font-family: 'myfontRegular';
+  position: absolute;
+  bottom: -36px;
+  white-space: nowrap;
+  background: #404040;
+  border-radius: 2px;
+  padding: 3px 4px;
+  width: 111px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  left: -35px;
+  opacity: 0;
+  transition: all 0.15s ease-in;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.tooltip button:hover .tooltiptext {
+  bottom: -26px;
+  opacity: 1;
+}
+.tooltip.active .tooltiptext {
+  bottom: -26px;
+  opacity: 1;
 }

@@ -1,6 +1,12 @@
 .header {
-  margin-top: 47px;
+  margin-top: 0;
   margin-bottom: 33px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 48px;
+  width: 100%;
+  z-index: 5;
 }
 .header__container {
   margin: 0 auto;
@@ -9,7 +15,7 @@
   padding: 0 15px;
 }
 .header__wrapper {
-  background: rgba(255, 255, 255, 0.2);
+  background: #2f65d1;
   border-radius: 14px;
   padding: 8px 37px 8px 13px;
 }

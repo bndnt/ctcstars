@@ -110,3 +110,70 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+//popup share show/hide
+
+document.addEventListener('DOMContentLoaded', () => {
+  const shareButtons = document.querySelectorAll('.js-video__share');
+  const popups = document.querySelectorAll('.js-share-popup');
+
+  shareButtons.forEach((shareButton, index) => {
+    const popup = popups[index];
+
+    shareButton.addEventListener('click', e => {
+      e.preventDefault();
+      // Toggle the popup visibility
+      popup.classList.toggle('active');
+      shareButton.classList.toggle('active');
+
+      // Close other popups if open
+      popups.forEach((p, i) => {
+        if (i !== index && p.classList.contains('active')) {
+          p.classList.remove('active');
+          shareButtons[i].classList.remove('active');
+        }
+      });
+    });
+  });
+
+  // Hide popup when clicking outside of it
+  document.addEventListener('click', e => {
+    if (
+      !e.target.closest('.js-video__share') &&
+      !e.target.closest('.js-share-popup')
+    ) {
+      popups.forEach((popup, index) => {
+        if (popup.classList.contains('active')) {
+          popup.classList.remove('active');
+          shareButtons[index].classList.remove('active');
+        }
+      });
+    }
+  });
+});
+
+//COPY LINK
+document.addEventListener('DOMContentLoaded', () => {
+  const copyButtons = document.querySelectorAll('.js-copy-btn');
+
+  copyButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const inputField = this.closest('.share-popup').querySelector(
+        '.js-share-popup-input'
+      );
+      inputField.select();
+      inputField.setSelectionRange(0, 99999); // For mobile devices
+      navigator.clipboard.writeText(inputField.value);
+
+      const tooltip = this.querySelector('.tooltiptext');
+      tooltip.textContent = 'Скопировано: ' + inputField.value;
+      tooltip.classList.add('active');
+    });
+
+    button.addEventListener('mouseout', function () {
+      const tooltip = this.querySelector('.tooltiptext');
+      tooltip.textContent = 'Копировать ссылку';
+      tooltip.classList.remove('active');
+    });
+  });
+});

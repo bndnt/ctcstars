@@ -1,6 +1,12 @@
 @import url('./header.css');
 @import url('./videos-result.css');
 
+.videos-main-block-cover {
+  /* margin-top: 164px; */
+}
+.videos-cover-main {
+  margin-top: 148px;
+}
 .videos-body {
   background-color: var(--darkBlue);
 }
@@ -38,5 +44,5 @@
   background-size: cover;
   left: 50%;
   transform: translateX(-50%);
-  top: -14px;
+  top: -17px;
 }
