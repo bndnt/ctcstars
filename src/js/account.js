@@ -119,4 +119,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const copyButton = document.getElementById('application-approved-button');
+  const tooltip = document.getElementById('application-approved-myTooltip');
+  const copyText = document.getElementById('application-approved-myInput');
+
+  // Обработчик клика на кнопку
+  copyButton.addEventListener('click', function () {
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+
+    tooltip.innerHTML = 'Скопировано: ' + copyText.value;
+  });
+
+  // Обработчик события mouseout для кнопки
+  copyButton.addEventListener('mouseout', function () {
+    tooltip.innerHTML = 'Копировать ссылку';
+  });
+});
+
 const player = new Plyr('#player');

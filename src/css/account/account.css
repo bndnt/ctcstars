@@ -11,11 +11,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 360px;
 }
-.account-data {
-  border-radius: 14px;
-  background: #386cd2;
-}
+
 .account__image {
   display: flex;
   align-items: center;
@@ -93,8 +91,9 @@
 }
 .account-data {
   padding: 36px 56px 27px;
-  margin-bottom: 360px;
   width: 100%;
+  border-radius: 14px;
+  background: #386cd2;
 }
 .account__title {
   margin-bottom: 21px;
@@ -533,4 +532,102 @@ input[data-plyr='volume']::-moz-range-thumb {
 .plyr__control[aria-expanded='true'] {
   background-color: transparent !important;
   backdrop-filter: none;
+}
+.account__sent-btn {
+  padding: 19px 34px;
+  background-color: transparent;
+  position: relative;
+  display: block;
+  margin: 39px auto 0;
+}
+.account__sent-btn span {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ff0199;
+  transition: all 0.4s ease-in;
+  position: relative;
+  z-index: 1;
+}
+.account__sent-btn svg {
+  transition: all 0.4s ease-in;
+
+  fill: white;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.account__sent-btn:hover svg {
+  fill: var(--pink);
+}
+.account__sent-btn:hover span {
+  color: #fff;
+}
+.account__sent-information {
+  width: 337px;
+  margin: 10px auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.support-others {
+  background-color: white;
+}
+.application-approved-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.application-approved-tooltip .application-approved-tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.application-approved-tooltip .application-approved-tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.application-approved-tooltip:hover .application-approved-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.account__video-nor-posted-icon {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 71px;
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
 }

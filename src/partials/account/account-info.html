@@ -70,6 +70,42 @@
             <div class="account__form-cover">
               <div class="account__upload-video">
                 <label class="account__upload-video-label">
+                  <div class="videos-result__info">
+                    <div class="videos-result__song-info">
+                      <div class="videos-result__song-img">
+                        <img src="././img/photo.jpg" alt="iocn" />
+                      </div>
+                      <div class="videos-result__song">
+                        <div class="videos-result__song-singer">
+                          Марьяна Локель
+                        </div>
+                        <div class="videos-result__song-name">
+                          Нано краска топ!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="videos-result__likes">
+                      <span><img src="././img/heart.svg" alt="icon" /></span>
+                      <span>1203</span>
+                    </div>
+                  </div>
+                  <div class="account__video-nor-posted-icon">
+                    <svg
+                      width="33"
+                      height="32"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0964 19.3334V22M9.42969 13.3717C10.0582 13.3334 10.8331 13.3334 11.8297 13.3334H20.363C21.3596 13.3334 22.1345 13.3334 22.763 13.3717M9.42969 13.3717C8.64526 13.4196 8.08874 13.5273 7.61373 13.7693C6.86108 14.1528 6.24915 14.7648 5.86566 15.5174C5.42969 16.373 5.42969 17.4932 5.42969 19.7334V21.6C5.42969 23.8402 5.42969 24.9603 5.86566 25.816C6.24915 26.5686 6.86108 27.1806 7.61373 27.5641C8.46937 28 9.58948 28 11.8297 28H20.363C22.6032 28 23.7233 28 24.579 27.5641C25.3316 27.1806 25.9436 26.5686 26.327 25.816C26.763 24.9603 26.763 23.8402 26.763 21.6V19.7334C26.763 17.4932 26.763 16.373 26.327 15.5174C25.9436 14.7648 25.3316 14.1528 24.579 13.7693C24.104 13.5273 23.5474 13.4196 22.763 13.3717M9.42969 13.3717V10.6667C9.42969 6.9848 12.4145 4.00003 16.0964 4.00003C19.7783 4.00003 22.763 6.9848 22.763 10.6667V13.3717"
+                        stroke="white"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                   <input
                     type="file"
                     class="account__upload-video-input"
@@ -345,10 +381,195 @@
                     </p>
                   </label>
                 </div>
+                <div class="application-sent">
+                  <span class="application-sent"
+                    ><img
+                      src="../../img/application-sent.svg"
+                      alt="icon" /></span
+                  ><span class="application-sent__text"
+                    >Заявка отправлена
+                  </span>
+                </div>
+                <div class="video-posted">
+                  <span class="video-posted__icon">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.6414 20.8042C14.54 19.8149 20 16.5823 20 12.1212V8.33881C20 7.5393 20 7.13954 19.8692 6.79591C19.7537 6.49235 19.566 6.22149 19.3223 6.00674C19.0465 5.76365 18.6722 5.62328 17.9236 5.34256L12.5618 3.33188C12.3539 3.25392 12.25 3.21494 12.143 3.19949C12.0482 3.18578 11.9518 3.18578 11.857 3.19949C11.75 3.21494 11.6461 3.25392 11.4382 3.33188L6.0764 5.34256C5.3278 5.62328 4.9535 5.76365 4.67766 6.00674C4.43398 6.22149 4.24627 6.49235 4.13076 6.79591C4 7.13954 4 7.5393 4 8.33881V12.1212C4 16.5823 9.45996 19.8149 11.3586 20.8042C11.5639 20.9112 11.6666 20.9647 11.809 20.9924C11.92 21.014 12.08 21.014 12.191 20.9924C12.3334 20.9647 12.4361 20.9112 12.6414 20.8042Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M9 12.1212L11 14.1212L13 12.1212L15 10.1212"
+                        stroke="#06C92E"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="video-posted__text">Видео опубликовано</span>
+                </div>
+                <div class="video-not-posted">
+                  <span class="video-posted__icon">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12" cy="11.5996" r="5.98291" fill="white" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.6414 20.8042C14.54 19.8149 20 16.5823 20 12.1212V8.33881C20 7.5393 20 7.13954 19.8692 6.79591C19.7537 6.49235 19.566 6.22149 19.3223 6.00674C19.0465 5.76365 18.6722 5.62328 17.9236 5.34256L12.5618 3.33188C12.3539 3.25392 12.25 3.21494 12.143 3.19949C12.0482 3.18578 11.9518 3.18578 11.857 3.19949C11.75 3.21494 11.6461 3.25392 11.4382 3.33188L6.0764 5.34256C5.3278 5.62328 4.9535 5.76365 4.67766 6.00674C4.43398 6.22149 4.24627 6.49235 4.13076 6.79591C4 7.13954 4 7.5393 4 8.33881V12.1212C4 16.5823 9.45996 19.8149 11.3586 20.8042C11.5639 20.9112 11.6666 20.9647 11.809 20.9924C11.92 21.014 12.08 21.014 12.191 20.9924C12.3334 20.9647 12.4361 20.9112 12.6414 20.8042ZM9.25414 10.0579C10.1309 9.34442 11.2978 9.55401 11.9976 10.3331C12.6974 9.55401 13.8492 9.35193 14.7411 10.0579C15.6329 10.7638 15.7413 11.9642 15.0527 12.808C14.664 13.2844 13.7404 14.1195 13.0098 14.7565C12.6633 15.0586 12.4901 15.2097 12.2805 15.2715C12.1018 15.3242 11.8934 15.3242 11.7147 15.2715C11.5051 15.2097 11.3319 15.0586 10.9854 14.7565C10.2548 14.1195 9.33119 13.2844 8.94247 12.808C8.25394 11.9642 8.37738 10.7713 9.25414 10.0579Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M9.5 9.62122L14.5 14.6212M14.5 9.62122L9.5 14.6212"
+                        stroke="#FF4F3E"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="video-posted__text">Видео не опубликовано</span>
+                </div>
               </div>
             </div>
-            <button class="account__sent-btn"></button>
+            <button class="account__sent-btn">
+              <span>участвовать в конкурсе</span>
+              <svg
+                width="296"
+                height="50"
+                viewBox="0 0 296 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M143.29 0.326681C188.033 0.249083 259.951 -0.483012 279.701 5.55201C299.45 11.587 300.496 35.0688 286.918 43.0003C276.74 48.9448 267.139 50.3027 133.465 49.9476C41.614 49.7043 28.5699 48.7023 13.0141 43.2905C-2.54172 37.8786 -5.77796 15.365 12.2925 7.8744C37.4011 -2.53081 101.068 0.399956 143.29 0.326681Z"
+                />
+              </svg>
+            </button>
           </form>
+          <div class="account__sent-information">
+            Информация о ФИО, возрасте и городе учассника является публичной
+            информацией после публикации
+          </div>
+          <div class="application-checking-block">
+            <div class="application-checking__icon">
+              <img src="../../img/application-checking.svg" alt="" />
+            </div>
+            <div class="application-checking__title">
+              Видео на ходится на проверке модератором
+            </div>
+            <div class="application-checking__text">
+              Видео, загруженные после 20:00 по МСК, публикуются на следующий
+              день
+            </div>
+          </div>
+          <div class="application-approved">
+            <div class="application-approved__title">
+              Поделись ссылкой с друзьями, чтобы собрать больше голосов
+            </div>
+            <input
+              type="text"
+              value="https://like.detmir.ru/proto/cEJyKj3v2554ImChsZdTbb/My-website-portfolio%"
+              id="application-approved-myInput"
+            />
+
+            <div class="application-approved-tooltip">
+              <button id="application-approved-button">
+                <span
+                  class="application-approved-tooltiptext"
+                  id="application-approved-myTooltip"
+                  >Копировать ссылку</span
+                >
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.2623 3.64258C19.7064 3.64258 21.2627 5.19813 21.2627 10.6426C21.2627 16.087 19.6466 17.6426 14.2623 17.6426C8.87808 17.6426 7.2627 16.087 7.2627 10.6426C7.2627 5.19813 8.81825 3.64258 14.2623 3.64258Z"
+                    stroke="white"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.96527 9.64258C3.46213 10.752 3.2627 12.2557 3.2627 14.258C3.2627 20.0016 4.96684 21.6426 10.6469 21.6426C12.644 21.6426 14.1497 21.4397 15.2627 20.927"
+                    stroke="white"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="try-again">
+            <div class="try-again__left">
+              <div class="try-again__title">
+                Убедитесь, что ваше видео соответствует всем требованиям
+                конкурса, и попробуйте снова
+              </div>
+              <div class="try-again__text">
+                Если у вас возникли вопросы или нужна помощь, не стесняйтесь
+                обратиться в службу поддержки
+              </div>
+            </div>
+            <button class="try-again__btn">
+              <span>Попробовать снова</span>
+              <svg
+                width="260"
+                height="50"
+                viewBox="0 0 260 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M125.863 0.326681C165.164 0.249083 228.335 -0.483012 245.683 5.55201C263.03 11.587 263.949 35.0688 252.023 43.0003C243.083 48.9448 234.649 50.3027 117.233 49.9476C36.5528 49.7043 25.0952 48.7023 11.4313 43.2905C-2.23259 37.8786 -5.07524 15.365 10.7975 7.8744C32.8523 -2.53081 88.7757 0.399956 125.863 0.326681Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="support-others">
+          <div class="support-others__left">
+            <div class="support-others__title">Поддержи других участников</div>
+            <div class="support-others__text">
+              Голосуй за других учатсников и находи новых творческих друзей на
+              конкурсе
+            </div>
+            <button class="support-others__btn">
+              <span>голосовать</span
+              ><svg
+                width="226"
+                height="43"
+                viewBox="0 0 226 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M109.693 0.677244C143.721 0.612062 198.416 -0.00289822 213.436 5.06652C228.456 10.1359 229.251 29.8607 218.925 36.5231C211.185 41.5165 203.882 42.6571 102.222 42.3589C32.3673 42.1544 22.4471 41.3128 10.6166 36.7668C-1.21378 32.2208 -3.67499 13.3094 10.0679 7.01733C29.1633 -1.72305 77.5827 0.738795 109.693 0.677244Z"
+                  fill="#0073E6"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="support-others__img">
+            <img src="../../img/support-others.svg" alt="bear" />
+          </div>
         </div>
       </div>
     </div>
