@@ -1,0 +1,124 @@
+@import url('./account-header.css');
+.account {
+  padding: 151px 0 0;
+}
+.account-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 760px;
+}
+.account-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.account-data {
+  border-radius: 14px;
+  background: #386cd2;
+}
+.account__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background-color: var(--white);
+  margin-bottom: 12px;
+}
+.account__upload-label {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 36, 36, 0.45);
+  top: 0;
+  left: 0;
+  transition: all 0.25s ease-in;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.account__image:hover .account__upload-label {
+  opacity: 1;
+}
+.account__upload-input {
+  height: 100%;
+  width: 100%;
+}
+.account__image svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 0.25s ease-in;
+  opacity: 0;
+}
+.account__image:hover svg {
+  opacity: 1;
+}
+.account__letter {
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 1.25;
+  color: var(--pink);
+}
+.account__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.account__full-name {
+  font-family: 'myfontBold';
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.account__phone {
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 31px;
+}
+.account-data {
+  padding: 36px 56px 27px;
+  margin-bottom: 260px;
+}
+.account__title {
+  font-family: 'myfontBold';
+  margin-bottom: 21px;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+}
+.account__add-video-btn {
+  width: 240px;
+  height: 50px;
+  padding: 18px 43px;
+  position: relative;
+}
+.account__add-video-btn span {
+  position: relative;
+  z-index: 1;
+}
+.account__add-video-btn svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: var(--white);
+  transition: all;
+}

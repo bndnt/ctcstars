@@ -33,15 +33,12 @@
   padding: 26px 96px 25px 97px;
   position: relative;
 }
-.videos-not-found__block:after {
+.videos-not-found__block svg {
   display: block;
   position: absolute;
   content: '';
   width: 35px;
   height: 35px;
-  background-image: url(../../img/not-found.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   left: 50%;
   transform: translateX(-50%);
   top: -17px;
