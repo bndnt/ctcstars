@@ -7,3 +7,6 @@
 .header.account-header .header__button-block:hover svg {
   fill: rgba(225, 225, 225, 0.1);
 }
+.video-header.account-header {
+  top: 33px;
+}
