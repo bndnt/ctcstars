@@ -5,14 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/ctcstars/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Звезды будущего</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link
       href="https://db.onlinewebfonts.com/c/10851f277d913a0868eb0ecf5e01fb29?family=Circe+Rounded+DM+Web"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/account.css" />
-    <script type="module" crossorigin src="/ctcstars/assets/styles-Dc0K_Ynm.js"></script>
-    <script type="module" crossorigin src="/ctcstars/assets/main-5p_8DYA8.js"></script>
-    <link rel="stylesheet" crossorigin href="/ctcstars/assets/styles-B605jpWE.css">
+    <script type="module" crossorigin src="/ctcstars/account.js"></script>
+    <link rel="modulepreload" crossorigin href="/ctcstars/assets/styles-DQvCKSMK.js">
+    <link rel="stylesheet" crossorigin href="/ctcstars/assets/styles-DrrPrB92.css">
   </head>
   <body class="videos-body">
     <main class="videos-main-block-cover">
@@ -125,6 +126,289 @@
               />
             </svg>
           </button>
+          <form action="" class="account__form">
+            <div class="account__form-cover">
+              <div class="account__upload-video">
+                <label class="account__upload-video-label">
+                  <input
+                    type="file"
+                    class="account__upload-video-input"
+                    name="filename"
+                    hidden
+                  />
+
+                  <video
+                    class="account-video-tag"
+                    id="player"
+                    playsinline
+                    data-poster="/path/to/poster.jpg"
+                  >
+                    <source src="../../img/video2.mp4" type="video/mp4" />
+
+                    <!-- Captions are optional -->
+                  </video>
+                  <div class="account__for-upload" style="display: none">
+                    <div class="account__upload-video-icon">
+                      <img
+                        src="../../img/account__upload-video-icon.svg"
+                        alt="plus"
+                      />
+                    </div>
+                    <div class="account__upload-video-title">
+                      Загрузите видео длительностью 30-60 сек
+                    </div>
+                    <p class="account__upload-video-p">
+                      Видео .mp4, .mov, .avi не более 50 Мб
+                    </p>
+                  </div>
+                </label>
+              </div>
+              <div class="account__form-info">
+                <label class="account__form-labels" for="">
+                  <input
+                    type="text"
+                    class="account__form-input"
+                    placeholder="Имя участника"
+                  />
+                </label>
+                <label class="account__form-labels" for="">
+                  <input
+                    type="text"
+                    class="account__form-input"
+                    placeholder="Фамилия участника"
+                  />
+                </label>
+                <label class="account__form-labels" for="">
+                  <input
+                    type="text"
+                    class="account__form-input"
+                    placeholder="Возраст"
+                  />
+                </label>
+                <label
+                  class="account__form-labels ja-mask-account__form-labels"
+                  for=""
+                >
+                  <input
+                    type="phone"
+                    class="account__form-input js-account__form-input"
+                    placeholder="+ 7 (___) ___-__-__"
+                  />
+                </label>
+                <label class="account__form-labels" for="">
+                  <input
+                    type="email"
+                    class="account__form-input"
+                    placeholder="Почта участника/родителя"
+                  />
+                </label>
+                <label class="account__form-labels" for="">
+                  <input
+                    type="text"
+                    class="account__form-input"
+                    placeholder="Город участника"
+                  />
+                </label>
+                <label class="account__form-labels" for="">
+                  <input
+                    type="text"
+                    class="account__form-input"
+                    placeholder="Ссылка на соцсеть участника/родителя"
+                  />
+                </label>
+                <div class="custom-select">
+                  <button
+                    class="select-button"
+                    role="combobox"
+                    aria-label="select button"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                    aria-controls="select-dropdown"
+                  >
+                    <span class="selected-value">Выбрать песню</span>
+                    <span class="account__select-arrow">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9.99951L12 14.9995L6 9.99951"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="select-dropdown"
+                    role="listbox"
+                    id="select-dropdown"
+                  >
+                    <li role="option">
+                      <input type="radio" id="song1" name="social-account" />
+                      <label for="song1"
+                        ><span class="account__select-content"
+                          ><img
+                            src="../../img/photo.jpg"
+                            alt="img"
+                            class="account__select-img"
+                          />
+                          <span class="account__select-song-info"
+                            ><span class="account__select-song-info-singer"
+                              >Марьяна Локель</span
+                            ><span class="account__select-song"
+                              >Арбузная жвачка</span
+                            ></span
+                          ></span
+                        ></label
+                      >
+                    </li>
+                    <li role="option">
+                      <input type="radio" id="song2" name="social-account" />
+                      <label for="song2"
+                        ><span class="account__select-content"
+                          ><img
+                            src="../../img/photo.jpg"
+                            alt="img"
+                            class="account__select-img"
+                          />
+                          <span class="account__select-song-info"
+                            ><span class="account__select-song-info-singer"
+                              >Марьяна Локель2</span
+                            ><span class="account__select-song"
+                              >Арбузная жвачка2</span
+                            ></span
+                          ></span
+                        ></label
+                      >
+                    </li>
+                    <li role="option">
+                      <input type="radio" id="song3" name="social-account" />
+                      <label for="song3"
+                        ><span class="account__select-content"
+                          ><img
+                            src="../../img/photo.jpg"
+                            alt="img"
+                            class="account__select-img"
+                          />
+                          <span class="account__select-song-info"
+                            ><span class="account__select-song-info-singer"
+                              >Марьяна Локель2</span
+                            ><span class="account__select-song"
+                              >Арбузная жвачка2</span
+                            ></span
+                          ></span
+                        ></label
+                      >
+                    </li>
+                    <li role="option">
+                      <input type="radio" id="song4" name="social-account" />
+                      <label for="song4"
+                        ><span class="account__select-content"
+                          ><img
+                            src="../../img/photo.jpg"
+                            alt="img"
+                            class="account__select-img"
+                          />
+                          <span class="account__select-song-info"
+                            ><span class="account__select-song-info-singer"
+                              >Марьяна Локель2</span
+                            ><span class="account__select-song"
+                              >Арбузная жвачка2</span
+                            ></span
+                          ></span
+                        ></label
+                      >
+                    </li>
+                    <li role="option">
+                      <input type="radio" id="song5" name="social-account" />
+                      <label for="song5"
+                        ><span class="account__select-content"
+                          ><img
+                            src="../../img/photo.jpg"
+                            alt="img"
+                            class="account__select-img"
+                          />
+                          <span class="account__select-song-info"
+                            ><span class="account__select-song-info-singer"
+                              >Марьяна Локель2</span
+                            ><span class="account__select-song"
+                              >Арбузная жвачка2</span
+                            ></span
+                          ></span
+                        ></label
+                      >
+                    </li>
+                    <li role="option">
+                      <input type="radio" id="song6" name="social-account" />
+                      <label for="song6"
+                        ><span class="account__select-content"
+                          ><img
+                            src="../../img/photo.jpg"
+                            alt="img"
+                            class="account__select-img"
+                          />
+                          <span class="account__select-song-info"
+                            ><span class="account__select-song-info-singer"
+                              >Марьяна Локель2</span
+                            ><span class="account__select-song"
+                              >Арбузная жвачка2</span
+                            ></span
+                          ></span
+                        ></label
+                      >
+                    </li>
+                    <li role="option">
+                      <input type="radio" id="song7" name="social-account" />
+                      <label for="song7"
+                        ><span class="account__select-content"
+                          ><img
+                            src="../../img/photo.jpg"
+                            alt="img"
+                            class="account__select-img"
+                          />
+                          <span class="account__select-song-info"
+                            ><span class="account__select-song-info-singer"
+                              >Марьяна Локель2</span
+                            ><span class="account__select-song"
+                              >Арбузная жвачка2</span
+                            ></span
+                          ></span
+                        ></label
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="account-form__radios">
+                  <label class="account-form__label-check">
+                    <input class="account-form__check-input" type="checkbox" />
+                    <span class="account-form__checkmark"></span>
+                    <p>
+                      С
+                      <a href="https://www.eapteka.ru/company/policy/"
+                        >правилами конкурса </a
+                      >ознакомлен и согласен
+                    </p>
+                  </label>
+                  <label class="account-form__label-check">
+                    <input class="account-form__check-input" type="checkbox" />
+                    <span class="account-form__checkmark"></span>
+                    <p>
+                      Выражаю свое согласие на
+                      <a href="https://www.eapteka.ru/company/policy/"
+                        >обработку персональных данных
+                      </a>
+                    </p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="account__sent-btn"></button>
+          </form>
         </div>
       </div>
     </div>
@@ -178,6 +462,6 @@
   </div>
 </footer>
 
-
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
   </body>
 </html>
