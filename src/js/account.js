@@ -140,6 +140,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const controls = `
+    <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play"><svg aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button>
+
 <div class="plyr__controls">
     
         <div class="plyr__progress">

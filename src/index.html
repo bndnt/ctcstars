@@ -5,19 +5,225 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/login.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+  <body class="body-main">
+    <load
+      src="./partials/main-page/main-header.html"
+      icon-path="img/sprite.svg#logo"
+    />
 
     <main>
-      <load src="./partials/hero.html" icon-path="img/sprite.svg#logo" />
-
+      <load
+        src="./partials/main-page/hero.html"
+        icon-path="img/sprite.svg#logo"
+      />
+      <div class="login">
+        <div class="login-bg js-login-bg"></div>
+        <div class="login__container forms-popup js-forms-popup">
+          <div class="login__forw-wrapper">
+            <button class="login-btn-close js-login-btn-close">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 7L12 12M12 12L7 17M12 12L17 7M12 12L17 17"
+                  stroke="black"
+                  stroke-opacity="0.25"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <form class="form">
+              <h1 class="login__title">Вход или регистрация</h1>
+              <label class="login__label"
+                ><input type="text" placeholder="Ваше имя"
+              /></label>
+              <label class="login__label"
+                ><input type="text" placeholder="Ваш номер телефона"
+              /></label>
+              <div class="login__agree">
+                <label class="login__label-check">
+                  <input
+                    class="login__check-input js-login__check-input"
+                    type="checkbox"
+                  />
+                  <span class="checkmark"></span>
+                  <p>
+                    Даю согласие на обработку персональных данных в соответствии
+                    c
+                    <a href="https://www.eapteka.ru/company/policy/"
+                      >политикой конфиденциальности</a
+                    >.
+                  </p>
+                </label>
+              </div>
+              <button class="login__button js-login__button">
+                <span>Получить код по СМС</span>
+                <svg
+                  width="361"
+                  height="55"
+                  viewBox="0 0 361 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M180.5 0.413057C232.765 0.336102 322.982 -1.58876 346.051 4.39624C364.426 6.3994 366.176 43.9566 349.551 49.465C337.663 55.3602 326.645 54.3521 170.5 54C63.2073 53.7586 31.2866 55.3313 13.1157 49.9643C-3.07175 45.1832 -4.82174 11.4056 10.9282 4.89578C20.9906 -2.11504 131.18 0.485724 180.5 0.413057Z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="login__container forms-popup js-forms-popup">
+          <div class="login__forw-wrapper">
+            <button class="login-btn-close js-login-btn-close">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 7L12 12M12 12L7 17M12 12L17 7M12 12L17 17"
+                  stroke="black"
+                  stroke-opacity="0.25"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <form class="form">
+              <h1 class="login__title">Введите код из СМС</h1>
+              <p class="code__text">Код был отправлен на номер</p>
+              <p class="code__text">+ 7 (___) ___-__-__</p>
+              <ul class="code__list js-code__list error">
+                <li>
+                  <label
+                    ><input class="js-code__input" maxlength="1" type="text"
+                  /></label>
+                </li>
+                <li>
+                  <label
+                    ><input class="js-code__input" maxlength="1" type="text"
+                  /></label>
+                </li>
+                <li>
+                  <label
+                    ><input class="js-code__input" maxlength="1" type="text"
+                  /></label>
+                </li>
+                <li>
+                  <label
+                    ><input class="js-code__input" maxlength="1" type="text"
+                  /></label>
+                </li>
+                <li>
+                  <label
+                    ><input class="js-code__input" maxlength="1" type="text"
+                  /></label>
+                </li>
+                <li>
+                  <label
+                    ><input class="js-code__input" maxlength="1" type="text"
+                  /></label>
+                </li>
+              </ul>
+              <p class="code__error-text">Введён неверный код</p>
+              <code class="code__text-p">Запросить код в СМС через 00:00</code>
+              <code class="code__text-p">Не приходит СМС</code>
+              <div class="code__agree"></div>
+              <button class="login__button js-code-login__button">
+                <span>Ввести код</span>
+                <svg
+                  width="160"
+                  height="54"
+                  viewBox="0 0 160 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M80 0.410836C103.165 0.334295 143.15 -1.58022 153.375 4.37261C161.519 6.365 162.294 43.7203 154.926 49.1991C149.657 55.0626 144.774 54.0599 75.5679 53.7097C28.0143 53.4697 13.8666 55.0339 5.81303 49.6957C-1.36144 44.9403 -2.13706 11.3442 4.84351 4.86947C9.30332 -2.10367 58.1405 0.483113 80 0.410836Z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="login__container forms-popup js-forms-popup">
+          <div class="login__forw-wrapper">
+            <button class="login-btn-close js-login-btn-close">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 7L12 12M12 12L7 17M12 12L17 7M12 12L17 17"
+                  stroke="black"
+                  stroke-opacity="0.25"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <form class="form form-problems">
+              <h1 class="login__title">Введите код из СМС</h1>
+              <p class="code__text">Обратитесь в службу поддержки</p>
+              <div class="form-problems__btns">
+                <button class="form-problems__buttin">
+                  <span> Попробовать снова</span>
+                  <svg
+                    width="203"
+                    height="54"
+                    viewBox="0 0 203 54"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M101.5 0.410836C130.89 0.334295 181.621 -1.58022 194.594 4.37261C204.927 6.365 205.911 43.7203 196.562 49.1991C189.877 55.0626 183.682 54.0599 95.8767 53.7097C35.5432 53.4697 17.5933 55.0339 7.37528 49.6957C-1.72733 44.9403 -2.71139 11.3442 6.1452 4.86947C11.8036 -2.10367 73.7658 0.483113 101.5 0.410836Z"
+                      fill="#0647C7"
+                    />
+                  </svg>
+                </button>
+                <button class="form-problems__buttin">
+                  <span>Служба поддержки </span>
+                  <svg
+                    width="203"
+                    height="54"
+                    viewBox="0 0 203 54"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M101.5 0.410836C130.89 0.334295 181.621 -1.58022 194.594 4.37261C204.927 6.365 205.911 43.7203 196.562 49.1991C189.877 55.0626 183.682 54.0599 95.8767 53.7097C35.5432 53.4697 17.5933 55.0339 7.37528 49.6957C-1.72733 44.9403 -2.71139 11.3442 6.1452 4.86947C11.8036 -2.10367 73.7658 0.483113 101.5 0.410836Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <!-- Loads the specified .html file -->
     </main>
 
     <load src="./partials/footer.html" />
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

@@ -28,3 +28,10 @@ body {
   font-family: 'myfontExtraBold';
   src: url('../fonts/CRA75DM.woff') format('woff');
 }
+.body-main {
+  background-color: rgba(6, 71, 199, 1);
+  overflow-x: hidden;
+}
+.header__button-real {
+  background-color: transparent;
+}

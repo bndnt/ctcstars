@@ -698,3 +698,13 @@
   display: none;
   transform: none;
 }
+.plyr__control.plyr__control--overlaid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 0;
+}
+.plyr__control.plyr__control--overlaid:hover {
+  background-color: #fff !important;
+}
