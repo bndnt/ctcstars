@@ -91,7 +91,8 @@
 }
 .form {
   width: 560px;
-  height: 401px;
+  height: min-content;
+  min-height: 270px;
   padding: 52px 100px 63px;
   border-radius: 14px;
   background-color: var(--blue);
@@ -250,7 +251,7 @@
 .login-btn-close {
   position: absolute;
   left: auto;
-  top: 5px;
+  top: 10px;
   right: 10px;
   border-radius: 50%;
   border-radius: 108px;
@@ -275,4 +276,59 @@
 }
 .login-bg.active {
   display: block;
+}
+.form-problems {
+  padding: 52px 64px 64px;
+}
+.form-problems__btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 29px;
+}
+.form-problems__buttin {
+  position: relative;
+  width: 203px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: all 0.2s ease-out;
+}
+.form-problems__buttin span {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 1.25;
+}
+.form-problems__buttin svg {
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-problems__buttin:first-child {
+  color: white;
+}
+.form-problems__buttin:last-child {
+  color: #0647c7;
+}
+.form-problems__buttin:first-child svg {
+  fill: #0647c7;
+}
+.form-problems__buttin:last-child svg {
+  fill: white;
+}
+.form-problems__buttin:first-child:hover svg {
+  fill: white;
+}
+.form-problems__buttin:first-child:hover {
+  color: #0647c7;
+}
+.form-problems__buttin:last-child:hover svg {
+  fill: #0647c7;
+}
+.form-problems__buttin:last-child:hover {
+  color: white;
 }
