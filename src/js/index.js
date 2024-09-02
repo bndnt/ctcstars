@@ -81,3 +81,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+new Accordion('.accordion-container', {
+  duration: 400,
+  showMultiple: true,
+});
+
+document
+  .querySelector('#mobile_menu_toggle')
+  .addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.toggle('active');
+    document.querySelector('.mobile__menu').classList.toggle('active');
+    document.querySelector('.js-login-bg').classList.toggle('active');
+
+    document.querySelector('.top__hamburger').classList.toggle('active');
+    document.body.classList.toggle('hidden');
+  });

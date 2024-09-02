@@ -1,3 +1,6 @@
+.body-main .header {
+  top: 33px;
+}
 .header__nav {
   display: flex;
   align-items: center;
@@ -18,4 +21,34 @@
 .header__button-real {
   text-transform: none;
   color: white;
+}
+
+@media screen and (max-width: 1110px) {
+  .header__nav {
+    display: none;
+  }
+  .header {
+    width: calc(100vw - 20px);
+    left: 10px;
+    transform: none;
+    top: 30px !important;
+  }
+  .header__container {
+    padding: 0;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    height: 53px;
+    width: calc(100vw - 34px);
+    left: 17px !important;
+    top: 20px !important;
+  }
+  .header__logo {
+    width: 136px;
+    height: 40px;
+  }
+  .header__wrapper {
+    padding: 6px 7px;
+  }
 }
