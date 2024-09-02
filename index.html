@@ -5,10 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/ctcstars/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
 
     <script type="module" crossorigin src="/ctcstars/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/ctcstars/assets/styles-DCMRwP31.js">
-    <link rel="stylesheet" crossorigin href="/ctcstars/assets/styles-9OPCEpIo.css">
+    <link rel="modulepreload" crossorigin href="/ctcstars/assets/styles-DxsF0R0L.js">
+    <link rel="stylesheet" crossorigin href="/ctcstars/assets/styles-IIa6gDJ6.css">
     <link rel="stylesheet" crossorigin href="/ctcstars/assets/login-CHQIwAt1.css">
   </head>
   <body class="body-main">
@@ -18,7 +22,7 @@
       <div class="header__block">
         <div class="header__logo">
           <a href="/">
-            <img src="/ctcstars/assets/logo-main-DI3mtjq0.svg" alt="logo" />
+            <img src="/ctcstars/assets/logo-main-Caleqpdd.svg" alt="logo" />
           </a>
         </div>
         <nav class="header__nav">
@@ -50,21 +54,100 @@
     </div>
   </div>
 </header>
+<div class="header__mobile mobile__menu">
+  <a id="mobile_menu_toggle" href="#">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+</div>
+<div class="top__hamburger">
+  <div class="top__hamburger-cover">
+    <div class="top__hamburger-logo">
+      <a href="./">
+        <img src="/ctcstars/assets/logo-main-Caleqpdd.svg" alt="logo" />
+      </a>
+    </div>
+    <ul>
+      <li>
+        <a href="#">Правила конкурса</a>
+      </li>
+
+      <li>
+        <a href="#">Как проголосовать</a>
+      </li>
+      <li>
+        <a href="#"> Призы</a>
+      </li>
+    </ul>
+    <button class="button-special join__button header-hamb-btn">
+      <span class="">Войти</span>
+      <svg
+        width="188"
+        height="45"
+        viewBox="0 0 188 45"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M91.0085 0.78748C119.426 0.719193 165.104 0.0749492 177.648 5.38577C190.191 10.6966 190.855 31.3606 182.232 38.3403C175.768 43.5714 169.669 44.7664 84.7685 44.4539C26.4305 44.2398 18.1457 43.3581 8.2657 38.5956C-1.61434 33.8331 -3.66979 14.0212 7.80742 7.42948C23.7547 -1.72711 64.1916 0.851962 91.0085 0.78748Z"
+          fill="white"
+          fill-opacity="0.3"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
 
 
     <main>
       <div class="hero">
   <div class="hero__wrapper">
     <div class="container">
-      <p class="hero-text">Онлайн-конкурс детских талантов</p>
-      <img src="" alt="" class="hero__img" />
+      <p class="hero-text">Онлайн-конкурс <span>детских</span> талантов</p>
+      <div class="hero__image">
+        <picture>
+          <source srcset="../../img/hero-img.svg" media="(min-width: 550px)" />
+
+          <img src="../../img/hero-img-mob.svg" alt="Dema" />
+        </picture>
+      </div>
+
       <div class="hero__bottom">
-        <ul class="hero__flex">
-          <li><a href="">участвовать в конкурсе</a></li>
-          <li><a href="">голосовать</a></li>
-        </ul>
+        <div class="join__btns">
+          <button class="button-special join__button">
+            <span class="">участвовать в конкурсе</span>
+            <svg
+              width="320"
+              height="55"
+              viewBox="0 0 320 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M154.908 1.00516C203.279 0.921354 281.028 0.130691 302.379 6.64852C323.73 13.1663 324.86 38.5267 310.182 47.0927C299.179 53.5127 288.799 54.9793 144.287 54.5958C44.9881 54.333 30.8864 53.2509 14.0693 47.406C-2.74781 41.5612 -6.24645 17.2465 13.2892 9.1567C40.4336 -2.08093 109.262 1.0843 154.908 1.00516Z"
+              />
+            </svg>
+          </button>
+          <button class="button-special join__button">
+            <span class="">голосовать</span>
+            <svg
+              width="320"
+              height="55"
+              viewBox="0 0 320 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M154.908 1.00516C203.279 0.921354 281.028 0.130691 302.379 6.64852C323.73 13.1663 324.86 38.5267 310.182 47.0927C299.179 53.5127 288.799 54.9793 144.287 54.5958C44.9881 54.333 30.8864 53.2509 14.0693 47.406C-2.74781 41.5612 -6.24645 17.2465 13.2892 9.1567C40.4336 -2.08093 109.262 1.0843 154.908 1.00516Z"
+              />
+            </svg>
+          </button>
+        </div>
         <div class="hero__rules">
-          Нажимая кнопку вы соглашаетесь с Правилами участия в конкурсе
+          Нажимая кнопку вы соглашаетесь с <a href=""
+            >Правилами участия в конкурсе</a
+          >
         </div>
       </div>
     </div>
@@ -80,11 +163,11 @@
           <div class="roules__img">
             <picture>
               <source
-                srcset="/ctcstars/assets/roules-1-CUdmV3oy.svg"
+                srcset="/ctcstars/assets/roules-1-BhDvUqVa.svg"
                 media="(min-width: 768px)"
               />
 
-              <img src="/ctcstars/assets/roules-1-mob-Bn6x-_GK.svg" alt="Описание изображения" />
+              <img src="/ctcstars/assets/roules-1-mob-CR7vx1u6.svg" alt="Описание изображения" />
             </picture>
           </div>
           <div class="roules__roulet__item-flex">
@@ -139,7 +222,7 @@
                 media="(min-width: 768px)"
               />
 
-              <img src="/ctcstars/assets/roules-4-mob-CxQX0-TH.svg" alt="Описание изображения" />
+              <img src="/ctcstars/assets/roules-4-mob-DICLdsid.svg" alt="Описание изображения" />
             </picture>
           </div>
           <div class="roules__roulet__item-flex">
@@ -760,8 +843,13 @@
     <div class="container">
       <div class="winners__title">
         <span class="winners__title-span">
-          <span class="winners__title-span-special"> 1.10.2024</span>
-          <span class="winners__title-span-first">мы объявим </span>
+          <span class="winners__title-span-first"
+            ><span class="winners__title-span-we">
+              <span class="winners__title-span-special"> 1.10.2024</span>
+              мы</span
+            >
+             объявим
+          </span>
           3 победителей конкурса
         </span>
       </div>
@@ -829,15 +917,129 @@
       <div class="faq">
   <div class="faq__wrapper">
     <div class="container">
-      <div class="faq__title"></div>
-      <ul class="faq__list">
-        <li class="faq__item"></li>
+      <div class="faq__title">FAQ</div>
+      <ul class="faq__list accordion-container">
+        <li class="faq__item ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">
+              Могу ли я спеть свою песню на видео?
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">
+              Да, мы организуем трансфер для победителей, если они проживают
+              не в Москве и МО.
+            </p>
+          </div>
+        </li>
+        <li class="faq__item ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">
+              Могу ли я просить проголосовать за себя друзей?
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">
+              Да, мы организуем трансфер для победителей, если они проживают
+              не в Москве и МО.
+            </p>
+          </div>
+        </li>
+        <li class="faq__item ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">
+              Могу ли я загрузить несколько видео?
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">
+              Да, мы организуем трансфер для победителей, если они проживают
+              не в Москве и МО.
+            </p>
+          </div>
+        </li>
+        <li class="faq__item ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">
+              Если я из другого города, оплачивается ли трансфер в Москву?
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">
+              Да, мы организуем трансфер для победителей, если они проживают
+              не в Москве и МО.
+            </p>
+          </div>
+        </li>
+        <li class="faq__item ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">
+              Если я стану победителем в конкурсе, мне придёт уведомление?
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">
+              Да, мы организуем трансфер для победителей, если они проживают
+              не в Москве и МО.
+            </p>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
 </div>
 
-      
+      <div class="join">
+  <div class="join__wrapper">
+    <div class="container">
+      <div class="join__flex">
+        <div class="join__left">
+          <div class="join__title">Присоединяйся  к «Звёздам  будущего»</div>
+          <div class="join__subtitle">
+            И зажги свою звезду на небосклоне талантов СуперЛайкШоу!
+          </div>
+          <div class="join__btns">
+            <button class="button-special join__button">
+              <span class="">участвовать в конкурсе</span>
+              <svg
+                width="320"
+                height="55"
+                viewBox="0 0 320 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M154.908 1.00516C203.279 0.921354 281.028 0.130691 302.379 6.64852C323.73 13.1663 324.86 38.5267 310.182 47.0927C299.179 53.5127 288.799 54.9793 144.287 54.5958C44.9881 54.333 30.8864 53.2509 14.0693 47.406C-2.74781 41.5612 -6.24645 17.2465 13.2892 9.1567C40.4336 -2.08093 109.262 1.0843 154.908 1.00516Z"
+                />
+              </svg>
+            </button>
+            <button class="button-special join__button">
+              <span class="">голосовать</span>
+              <svg
+                width="320"
+                height="55"
+                viewBox="0 0 320 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M154.908 1.00516C203.279 0.921354 281.028 0.130691 302.379 6.64852C323.73 13.1663 324.86 38.5267 310.182 47.0927C299.179 53.5127 288.799 54.9793 144.287 54.5958C44.9881 54.333 30.8864 53.2509 14.0693 47.406C-2.74781 41.5612 -6.24645 17.2465 13.2892 9.1567C40.4336 -2.08093 109.262 1.0843 154.908 1.00516Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="join__p">
+            Нажимая кнопку вы соглашаетесь с Правилами участия в конкурсе
+          </p>
+        </div>
+        <div class="join__img">
+          <img src="" alt="bear" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       <div class="login">
         <div class="login-bg js-login-bg"></div>
         <div class="login__container forms-popup js-forms-popup">
@@ -1083,6 +1285,7 @@
   </div>
 </footer>
 
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 
   </body>
 </html>
