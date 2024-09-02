@@ -11,10 +11,16 @@
   max-width: 1198px;
   padding: 0 15px;
 }
+@media (max-width: 370px) {
+  .container {
+    padding: 0 9px;
+  }
+}
 body.hidden {
   overflow: hidden;
 }
 .body-main footer {
+  margin-top: -16px;
 }
 @media screen and (max-width: 1200px) {
   .body-main footer {

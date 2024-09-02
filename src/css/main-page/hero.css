@@ -117,3 +117,16 @@
     line-height: 1.2;
   }
 }
+@media (max-width: 370px) {
+  .hero__image {
+    width: 559px;
+    height: 572px;
+    left: 49.5%;
+    top: -12.5%;
+  }
+  .join__button svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

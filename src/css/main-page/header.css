@@ -1,5 +1,8 @@
 .body-main .header {
   top: 33px;
+  max-width: 1160px;
+  left: calc((100vw - 1160px) / 2);
+  transform: none;
 }
 .header__nav {
   display: flex;
@@ -22,7 +25,11 @@
   text-transform: none;
   color: white;
 }
-
+@media screen and (max-width: 1200px) {
+  .header {
+    left: 17px !important;
+  }
+}
 @media screen and (max-width: 1110px) {
   .header__nav {
     display: none;
@@ -50,5 +57,13 @@
   }
   .header__wrapper {
     padding: 6px 7px;
+  }
+}
+@media (max-width: 370px) {
+  .header {
+    height: 53px;
+    width: calc(100vw - 20px);
+    left: 10px !important;
+    top: 20px !important;
   }
 }

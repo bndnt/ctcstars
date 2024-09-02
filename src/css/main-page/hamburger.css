@@ -167,3 +167,12 @@
     /* margin: 21px 0 36px; */
   }
 }
+@media (max-width: 370px) {
+  .header-hamb-btn svg {
+    width: 188px !important;
+    height: 44px !important;
+  }
+  .mobile__menu {
+    right: 26px;
+  }
+}

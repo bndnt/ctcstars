@@ -17,7 +17,8 @@
 .header__wrapper {
   -webkit-backdrop-filter: blur(53px); /* Для поддержки Safari */
   backdrop-filter: blur(53px);
-  background: rgba(255, 255, 255, 0.16), rgba(6, 71, 199, 0.32);
+  background-image: url(../../img/Background.svg);
+  background-size: cover;
   border-radius: 14px;
   padding: 8px 37px 8px 13px;
 }
