@@ -9,6 +9,8 @@
 }
 .videos-body {
   background-color: var(--darkBlue);
+  margin: 0;
+  padding: 0;
 }
 .videos-not-found {
   margin-top: 12px;
