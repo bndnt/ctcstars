@@ -220,3 +220,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const supportBlock = document.querySelector('.support__block');
+  const supportTelegram = document.querySelector('.support__telegram');
+
+  function toggleSupportClasses() {
+    supportBlock.classList.toggle('active');
+    supportTelegram.classList.toggle('active');
+  }
+
+  function removeSupportClasses(event) {
+    // Если клик не на блоке или телеграме, удаляем классы
+    if (
+      !supportBlock.contains(event.target) &&
+      !supportTelegram.contains(event.target)
+    ) {
+      supportBlock.classList.remove('active');
+      supportTelegram.classList.remove('active');
+    }
+  }
+
+  // Добавляем активные классы при клике на блок
+  supportBlock.addEventListener('click', toggleSupportClasses);
+
+  // Убираем активные классы при клике вне блока или телеграма
+  document.addEventListener('click', removeSupportClasses);
+});
