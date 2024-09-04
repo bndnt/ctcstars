@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Remove like
         post.classList.remove('liked');
         likesContainer.classList.remove('active');
-        likeText.textContent = 'голосовать';
+        likeText.textContent = 'Голосовать';
 
         // Remove hearts animation by clearing inline styles
         hearts.forEach(heart => {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add like
         post.classList.add('liked');
         likesContainer.classList.add('active');
-        likeText.textContent = 'ГОЛОС ПРИНЯТ';
+        likeText.textContent = 'Голос принят';
 
         // Show the hearts container and start animation
         heartsContainer.style.display = 'flex';
@@ -230,32 +230,39 @@ const controls = `
 `;
 
 // Setup the player
-const player = new Plyr('#player', { controls });
+const players = Array.from(document.querySelectorAll('.js-player')).map(
+  p => new Plyr(p)
+);
 
 document.addEventListener('DOMContentLoaded', function () {
-  const plyrElement = document.querySelector('.plyr');
-  const videoBottom = document.querySelector('.video__bottom');
+  const plyrElements = document.querySelectorAll('.plyr');
 
-  // Наблюдаем за изменениями атрибутов (классов) у элемента plyrElement
-  const observer = new MutationObserver(function (mutationsList) {
-    for (let mutation of mutationsList) {
-      if (
-        mutation.type === 'attributes' &&
-        mutation.attributeName === 'class'
-      ) {
-        if (plyrElement.classList.contains('plyr--hide-controls')) {
-          videoBottom.classList.remove('up');
-        } else {
-          videoBottom.classList.add('up');
+  plyrElements.forEach(plyrElement => {
+    const videoBottom = plyrElement
+      .closest('.video-main__item-cover')
+      .querySelector('.video__bottom');
+
+    // Создаем наблюдатель за изменениями атрибутов (классов) у каждого элемента plyrElement
+    const observer = new MutationObserver(function (mutationsList) {
+      mutationsList.forEach(mutation => {
+        if (
+          mutation.type === 'attributes' &&
+          mutation.attributeName === 'class'
+        ) {
+          if (plyrElement.classList.contains('plyr--hide-controls')) {
+            videoBottom.classList.remove('up');
+          } else {
+            videoBottom.classList.add('up');
+          }
         }
-      }
-    }
-  });
+      });
+    });
 
-  observer.observe(plyrElement, { attributes: true });
+    observer.observe(plyrElement, { attributes: true });
 
-  // Очищаем наблюдатель при выходе с страницы или завершении работы
-  window.addEventListener('unload', function () {
-    observer.disconnect();
+    // Очищаем наблюдатель при выходе с страницы или завершении работы
+    window.addEventListener('unload', function () {
+      observer.disconnect();
+    });
   });
 });

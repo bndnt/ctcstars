@@ -147,9 +147,9 @@
   display: block;
   position: relative;
   z-index: 3;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: center;
   color: var(--pink);
   font-family: 'myfontExtraBold';
@@ -357,4 +357,37 @@
   opacity: 1;
 }
 .share-popup {
+}
+@media screen and (max-width: 550px) {
+  .video-main__container {
+    max-width: 340px;
+  }
+  .video-main__item {
+    height: 659px;
+  }
+  .video-main__item-cover {
+    height: 607px;
+  }
+  .video__author-img {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width: 370px) {
+  .video-main__item {
+    height: 458px;
+  }
+  .video-main__item-cover {
+    height: 393px;
+  }
+  .video-main__container {
+    padding: 0 10px;
+  }
+  .video__btn {
+    margin-bottom: 90px;
+    margin-left: calc((100% - 160px) / 2);
+  }
+  .video-main {
+    margin-top: 104px;
+  }
 }
