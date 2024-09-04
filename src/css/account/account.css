@@ -116,7 +116,7 @@
   z-index: 1;
   font-size: 16px;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   color: #ff0199;
   font-family: 'myfontBold';
@@ -486,6 +486,8 @@
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(3px);
 }
+.plyr__control svg {
+}
 .plyr__control[data-plyr='fullscreen'] svg {
   fill: none;
 }
@@ -582,7 +584,7 @@
   font-weight: 800;
   font-size: 16px;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   color: #ff0199;
   transition: all 0.4s ease-in;
@@ -895,7 +897,7 @@
   color: var(--pink);
   font-size: 16px;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   color: #f09;
   font-family: 'myfontExtraBold';
@@ -915,7 +917,7 @@
 .support-others__title {
   font-size: 24px;
   line-height: 1.24;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #fd039a;
   font-family: 'myfontExtraBold';
   margin-bottom: 3px;
@@ -934,7 +936,7 @@
 .support-others__btn span {
   font-size: 16px;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   color: #fff;
   font-family: 'myfontExtraBold';
@@ -1015,6 +1017,46 @@
 }
 .support__telegram-icon {
   padding: 16px 16px 16px 12px;
+}
+.loading {
+  position: absolute;
+  top: 45%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  border: 2px solid transparent;
+  border-top-color: var(--pink); /* Цвет верхней части полукруга */
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+  box-sizing: border-box;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-color: transparent transparent transparent var(--pink);
+  }
+  25% {
+    transform: rotate(90deg);
+    border-color: transparent transparent transparent var(--pink);
+  }
+  50% {
+    transform: rotate(180deg);
+    border-color: transparent transparent var(--pink) var(--pink);
+  }
+  75% {
+    transform: rotate(270deg);
+    border-color: transparent var(--pink) var(--pink) var(--pink);
+  }
+  95% {
+    transform: rotate(360deg);
+    border-color: var(--pink) var(--pink) var(--pink) var(--pink);
+  }
+  100% {
+    transform: rotate(360deg);
+    border-color: var(--pink) transparent transparent transparent;
+  }
 }
 
 @media (max-width: 991px) {
