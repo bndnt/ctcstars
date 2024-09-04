@@ -273,7 +273,7 @@
   color: var(--white);
 }
 @media screen and (max-width: 991px) {
-  .header__logo {
+  .videos-body .header__logo {
     display: none;
   }
   .header__form {
