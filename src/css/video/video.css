@@ -85,6 +85,10 @@
   bottom: 0;
   width: 100%;
   height: 108px;
+  transition: all 0.15s ease-out;
+}
+.video__bottom.up {
+  margin-bottom: 45px;
 }
 .video__btn {
   position: relative;
@@ -273,16 +277,30 @@
   position: absolute;
   bottom: 0;
   right: -257px;
-  width: 249px;
-  height: 42px;
+  width: 250px;
+  height: 80px;
   border-radius: 10px;
   background-color: white;
   align-items: center;
   justify-content: space-between;
   display: none;
+  flex-direction: column;
 }
 .share-popup.active {
   display: flex;
+}
+.share-popup-copy-block {
+  display: flex;
+  width: 100%;
+  margin-top: -14px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.share-popup .account-share-socials {
+  height: 52px !important;
+}
+.share-popup .account-share-social svg {
+  margin-top: -14px;
 }
 .share-popup-input {
   padding: 12px 15px;
@@ -290,7 +308,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 177px;
+  width: 208px;
   color: #0647c7;
 }
 .share-popup-input::placeholder {
@@ -337,4 +355,6 @@
 .tooltip.active .tooltiptext {
   bottom: -26px;
   opacity: 1;
+}
+.share-popup {
 }

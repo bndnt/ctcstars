@@ -825,7 +825,7 @@
   border-radius: 10px;
   width: 250px;
   height: 43px;
-
+  overflow: hidden;
   background: #fff;
 }
 .account-share-social {
@@ -834,6 +834,27 @@
   width: calc(100% / 3);
   border-right: 1px solid #e1f0ff;
   height: 100%;
+}
+.account-share-social:nth-child(1) svg {
+  fill: #07f;
+}
+.account-share-social:nth-child(2) svg {
+  fill: #fe2360 !important;
+}
+.account-share-social:nth-child(3) svg {
+  fill: #00b0f2;
+}
+.account-share-social:nth-child(1):hover {
+  background-color: #07f;
+}
+.account-share-social:nth-child(2):hover {
+  background-color: #fe2360;
+}
+.account-share-social:nth-child(3):hover {
+  background-color: #00b0f2;
+}
+.account-share-social:hover svg {
+  fill: white !important;
 }
 .account-share-social a {
   width: 100%;

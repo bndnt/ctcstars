@@ -117,12 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const shareButtons = document.querySelectorAll('.js-video__share');
   const popups = document.querySelectorAll('.js-share-popup');
 
-  shareButtons.forEach((shareButton, index) => {
-    const popup = popups[index];
+  function handleShareButtonClick(e, shareButton, popup, index) {
+    e.preventDefault();
+    const windowWidth = window.innerWidth;
 
-    shareButton.addEventListener('click', e => {
-      e.preventDefault();
-      // Toggle the popup visibility
+    if (windowWidth > 991) {
+      // Desktop behavior: toggle the popup visibility
       popup.classList.toggle('active');
       shareButton.classList.toggle('active');
 
@@ -133,22 +133,44 @@ document.addEventListener('DOMContentLoaded', () => {
           shareButtons[i].classList.remove('active');
         }
       });
-    });
+    } else {
+      // Mobile behavior: typical share button action
+      // Here you could trigger the native share dialog (if supported) or redirect to a share URL
+      window.open('https://your-share-url.com', '_blank'); // Example URL, replace with your logic
+    }
+  }
+
+  shareButtons.forEach((shareButton, index) => {
+    const popup = popups[index];
+
+    shareButton.addEventListener('click', e =>
+      handleShareButtonClick(e, shareButton, popup, index)
+    );
   });
 
-  // Hide popup when clicking outside of it
+  // Hide popup when clicking outside of it (desktop only)
   document.addEventListener('click', e => {
-    if (
-      !e.target.closest('.js-video__share') &&
-      !e.target.closest('.js-share-popup')
-    ) {
-      popups.forEach((popup, index) => {
-        if (popup.classList.contains('active')) {
-          popup.classList.remove('active');
-          shareButtons[index].classList.remove('active');
-        }
-      });
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth > 991) {
+      if (
+        !e.target.closest('.js-video__share') &&
+        !e.target.closest('.js-share-popup')
+      ) {
+        popups.forEach((popup, index) => {
+          if (popup.classList.contains('active')) {
+            popup.classList.remove('active');
+            shareButtons[index].classList.remove('active');
+          }
+        });
+      }
     }
+  });
+
+  // Re-run the logic if the window is resized
+  window.addEventListener('resize', () => {
+    popups.forEach(popup => popup.classList.remove('active'));
+    shareButtons.forEach(button => button.classList.remove('active'));
   });
 });
 
@@ -175,5 +197,65 @@ document.addEventListener('DOMContentLoaded', () => {
       tooltip.textContent = 'Копировать ссылку';
       tooltip.classList.remove('active');
     });
+  });
+});
+
+const controls = `
+    <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play"><svg aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button>
+
+<div class="plyr__controls">
+    
+        <div class="plyr__progress">
+        <input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" aria-label="Seek">
+        <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
+        <span role="tooltip" class="plyr__tooltip">00:00</span>
+    </div>
+    <div style="display: flex" class="player-flex-block">
+    <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
+        <svg class="icon--pressed" role="presentation" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.57373 1L1.57373 11" stroke="#FF0199" stroke-width="1.6" stroke-linecap="round" />
+  <path d="M7.57373 1L7.57373 11" stroke="#FF0199" stroke-width="1.6" stroke-linecap="round" />
+</svg>
+        <svg class="icon--not-pressed" role="presentation" width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19.1798 10.0247C20.1197 10.5674 20.1197 11.9241 19.1798 12.4668L2.40958 22.1491C1.46962 22.6918 0.294679 22.0134 0.294679 20.9281L0.294679 1.56351C0.29468 0.478141 1.46962 -0.200213 2.40958 0.34247L19.1798 10.0247Z" fill="#FF0199" />
+</svg>
+        
+    </button>
+    
+<div style="display: flex"><div class="plyr__time plyr__time--current" aria-label="Current time">00:00</div>
+    <div class="plyr__time plyr__time--duration" aria-label="Duration">00:00</div></div>
+   </div>
+
+</div>
+`;
+
+// Setup the player
+const player = new Plyr('#player', { controls });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const plyrElement = document.querySelector('.plyr');
+  const videoBottom = document.querySelector('.video__bottom');
+
+  // Наблюдаем за изменениями атрибутов (классов) у элемента plyrElement
+  const observer = new MutationObserver(function (mutationsList) {
+    for (let mutation of mutationsList) {
+      if (
+        mutation.type === 'attributes' &&
+        mutation.attributeName === 'class'
+      ) {
+        if (plyrElement.classList.contains('plyr--hide-controls')) {
+          videoBottom.classList.remove('up');
+        } else {
+          videoBottom.classList.add('up');
+        }
+      }
+    }
+  });
+
+  observer.observe(plyrElement, { attributes: true });
+
+  // Очищаем наблюдатель при выходе с страницы или завершении работы
+  window.addEventListener('unload', function () {
+    observer.disconnect();
   });
 });

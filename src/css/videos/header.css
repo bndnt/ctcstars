@@ -248,7 +248,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   color: #0647c7;
   transition: color 0.25s ease-in;
@@ -271,4 +271,12 @@
 }
 .header__button-block:hover {
   color: var(--white);
+}
+@media screen and (max-width: 550px) {
+  .header__button-block svg {
+    width: 141px;
+    height: 49px;
+  }
+}
+@media screen and (max-width: 370px) {
 }
