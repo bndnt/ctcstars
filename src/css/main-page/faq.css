@@ -57,8 +57,9 @@
 .ac.is-active > .ac-header .ac-trigger::after {
   background-image: url(../../img/faq-open.svg);
   content: '';
-  width: 44px;
-  height: 45px;
+  width: 26px;
+  height: 13px;
+  right: 3px;
 }
 .ac .ac-trigger:focus {
   color: var(--pink);

@@ -68,9 +68,9 @@
   left: 12px;
   top: 0;
   content: '';
-  width: 23px;
-  height: 17px;
-  background-image: url(../../img/songs-icon.svg);
+  width: 22px;
+  height: 18px;
+  background-image: url(../../img/songs-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

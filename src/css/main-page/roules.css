@@ -251,7 +251,7 @@
     align-items: center;
   }
   .roules__item {
-    width: 500px;
+    width: 630px;
   }
   .roules__item:nth-child(3) {
     order: -1;
@@ -261,6 +261,9 @@
   }
   .roules-attention__btn::after {
     display: none;
+  }
+  .roules__roulet__item-flex {
+    width: 350px;
   }
 }
 @media (max-width: 768px) {

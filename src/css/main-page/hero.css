@@ -62,14 +62,14 @@
 }
 @media (max-width: 991px) {
   .hero__image {
-    width: 1800px;
-    height: 750px;
+    width: 2100px;
+    height: 850px;
     top: -7.5%;
     left: 56.5%;
   }
-  /* .hero__bottom {
-    margin-top: 711px;
-  } */
+  .hero__bottom {
+    margin-top: 787px;
+  }
 }
 @media (max-width: 768px) {
   .hero__bottom {
