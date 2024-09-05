@@ -41,9 +41,17 @@
 .roules__item:nth-child(1) .roules__img {
   left: -8px;
 }
-.roules__item:nth-child(3) .roules__img {
-  left: -8px;
+.roules__item:nth-child(2) .roules__img {
+  bottom: -1px;
 }
+.roules__item:nth-child(3) .roules__img {
+  left: -9px;
+  bottom: -1px;
+}
+.roules__item:nth-child(4) .roules__img {
+  left: 0;
+}
+
 .roules__img {
   position: absolute;
   left: 0;

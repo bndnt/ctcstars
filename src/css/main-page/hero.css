@@ -13,10 +13,10 @@
 }
 .hero__image {
   position: absolute;
-  width: 2252px;
-  height: 1412px;
-  top: -48.5%;
-  left: 41.5%;
+  width: 2945px;
+  height: 1031px;
+  top: -14.5%;
+  left: 56.5%;
   transform: translateX(-50%);
   z-index: -1;
 }
@@ -28,7 +28,11 @@
 .hero__bottom {
   margin-top: 853px;
 }
-
+@media (min-width: 1440px) {
+  .hero__bottom {
+    margin-top: 868px;
+  }
+}
 .hero .join__btns {
   flex-direction: row;
   gap: 14px;
