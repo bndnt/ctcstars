@@ -246,13 +246,13 @@
 }
 .header__button-block {
   position: relative;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1;
   text-transform: capitalize;
   text-align: center;
   color: #0647c7;
   transition: color 0.25s ease-in;
+  font-family: 'myfontBold';
 }
 .header__button-block span {
   z-index: 1;

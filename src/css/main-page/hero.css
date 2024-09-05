@@ -49,32 +49,29 @@
 .hero__rules a {
   color: white;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .hero__image {
-    width: 2000px;
-    height: 1300px;
-    top: -43.5%;
+    width: 2745px;
+    height: 900px;
+    top: -7.5%;
+    left: 56.5%;
   }
-  .hero__bottom {
-    margin-top: 825px;
+  .hero {
+    padding: 119px 0 101px;
   }
 }
 @media (max-width: 991px) {
   .hero__image {
-    width: 1400px;
-    height: 1000px;
-    top: -33.5%;
+    width: 1800px;
+    height: 750px;
+    top: -7.5%;
+    left: 56.5%;
   }
-  .hero__bottom {
+  /* .hero__bottom {
     margin-top: 711px;
-  }
+  } */
 }
 @media (max-width: 768px) {
-  .hero__image {
-    width: 1300px;
-    height: 780px;
-    top: -34.5%;
-  }
   .hero__bottom {
     margin-top: 559px;
   }

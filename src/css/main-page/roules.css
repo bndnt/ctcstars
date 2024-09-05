@@ -179,7 +179,8 @@
 .roules__absolute-block {
   position: absolute;
   bottom: -18px;
-  left: 266px;
+  left: auto;
+  right: 44px;
   transform: rotate(-3deg);
   border-radius: 29px;
   width: 250px;
@@ -217,9 +218,9 @@
     padding: 21px 9px 24px;
     width: calc(100% / 2 - 17px);
   }
-  .roules__roulet__item-flex {
+  /* .roules__roulet__item-flex {
     width: 250px;
-  }
+  } */
   .roules__item:nth-child(1) .roules__img {
     width: 240px;
     left: -7px;
@@ -241,6 +242,8 @@
     top: -17px;
     left: -124px;
   }
+}
+@media (max-width: 1100px) {
 }
 @media (max-width: 991px) {
   .roules__list {
