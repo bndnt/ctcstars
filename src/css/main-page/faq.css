@@ -27,9 +27,13 @@
 }
 .ac .ac-trigger {
   font-size: 30px;
+  line-height: 1.25;
   color: #000;
   font-family: 'myfontBold';
   padding: 0;
+}
+.ac-text a {
+  color: #0073e6;
 }
 .ac .ac-panel {
   transition: none;
