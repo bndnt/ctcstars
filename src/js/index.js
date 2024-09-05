@@ -160,3 +160,70 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const phoneInput = document.querySelector('.js-phone-input');
+
+  phoneInput.addEventListener('focus', function () {
+    // Если поле пустое, при фокусе сразу вставляем маску
+    if (phoneInput.value === '') {
+      phoneInput.value = '+7 (___) ___-__-__';
+      phoneInput.setSelectionRange(4, 4); // Ставим курсор после "+7 ("
+    }
+  });
+
+  phoneInput.addEventListener('input', function (e) {
+    let input = phoneInput.value.replace(/\D/g, ''); // Убираем все нецифровые символы
+    if (input.length === 0) {
+      phoneInput.value = '+7 (___) ___-__-__';
+      phoneInput.setSelectionRange(4, 4); // Возвращаем курсор на начало ввода после "+7 ("
+    } else {
+      // Ограничиваем ввод 10 цифрами (после 7)
+      input = input.substring(1, 11); // Убираем первый символ (7), чтобы не продублировать его
+
+      let formattedInput = '+7 (';
+      if (input.length > 0) {
+        formattedInput += input.substring(0, 3); // Первые 3 цифры
+      }
+      if (input.length >= 4) {
+        formattedInput += ') ' + input.substring(3, 6); // Следующие 3 цифры
+      }
+      if (input.length >= 7) {
+        formattedInput += '-' + input.substring(6, 8); // Следующие 2 цифры
+      }
+      if (input.length >= 9) {
+        formattedInput += '-' + input.substring(8, 10); // Последние 2 цифры
+      }
+
+      // Дополняем недостающие части маски подчеркиванием
+      if (input.length < 10) {
+        formattedInput += '_'.repeat(10 - input.length);
+      }
+
+      phoneInput.value = formattedInput;
+
+      // Если пользователь пытается удалить маску
+      if (phoneInput.value.length < 4) {
+        phoneInput.value = '+7 (';
+      }
+    }
+  });
+
+  phoneInput.addEventListener('blur', function () {
+    // Очищаем поле, если ничего не введено
+    if (phoneInput.value === '+7 (___) ___-__-__') {
+      phoneInput.value = '';
+    }
+  });
+
+  // Ограничиваем доступные для ввода символы только цифрами
+  phoneInput.addEventListener('keydown', function (e) {
+    if (
+      !/[0-9]/.test(e.key) &&
+      e.key !== 'Backspace' &&
+      e.key !== 'ArrowLeft' &&
+      e.key !== 'ArrowRight'
+    ) {
+      e.preventDefault();
+    }
+  });
+});
