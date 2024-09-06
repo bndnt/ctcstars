@@ -135,7 +135,7 @@
     padding: 67px 0 59px;
   }
   .join__title {
-    font-size: 32px;
+    font-size: 34px;
     line-height: 1.12;
   }
   .join__subtitle {
@@ -148,13 +148,14 @@
     gap: 12px;
   }
   .join__left {
-    margin-bottom: 278px;
+    margin-bottom: 291px;
   }
   .join__img {
     width: 817px;
     height: 561px;
     left: calc((100% - 871px) / 2 + 128px);
   }
+
   .join__img {
     bottom: -73px;
   }
