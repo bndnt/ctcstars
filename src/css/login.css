@@ -24,7 +24,6 @@
 }
 .login__label input {
   font-family: 'myfontRegular';
-
   background-color: var(--white);
   height: 47px;
   width: 100%;

@@ -1100,6 +1100,16 @@
 .account-error-video-gb {
   background: rgba(250, 188, 34, 0.3);
 }
+.account-typing-error {
+  width: 100%;
+  padding: 3px 10px;
+  background-color: #ff4f3e;
+  font-size: 12px;
+  line-height: 1.28;
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
 @media (max-width: 991px) {
   .support {
     position: static;
