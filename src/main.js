@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.writeText(inputField.value);
 
       const tooltip = this.querySelector('.tooltiptext');
-      tooltip.textContent = 'Скопировано: ' + inputField.value;
+      tooltip.textContent = 'скопировано: ' + inputField.value;
       tooltip.classList.add('active');
     });
 
