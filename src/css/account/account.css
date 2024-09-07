@@ -717,6 +717,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin-left: 0;
+  z-index: 10;
 }
 .plyr__control.plyr__control--overlaid:hover {
   background-color: #fff !important;
