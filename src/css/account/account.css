@@ -275,6 +275,8 @@
   width: 100%;
   display: block;
 }
+.account__form-labels input.error {
+}
 .account__form-labels input {
   height: 42px;
   width: 100%;
