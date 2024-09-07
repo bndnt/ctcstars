@@ -644,10 +644,13 @@
   font-family: 'myfontRegular';
   white-space: nowrap;
   bottom: -26px;
-  left: 50%;
-  margin-left: -75px;
+  right: -31px;
   opacity: 0;
   transition: opacity 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
 }
 
 .application-approved-tooltip:hover .application-approved-tooltiptext {
