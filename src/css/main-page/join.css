@@ -71,6 +71,8 @@
   text-align: center;
   color: rgba(225, 240, 255, 0.45);
   max-width: 324px;
+  position: relative;
+  z-index: 2;
 }
 .join__p a {
   color: #fff;
