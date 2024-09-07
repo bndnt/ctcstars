@@ -15,6 +15,9 @@
   max-width: 1190px;
   /* padding: 0 15px; */
 }
+.videos-main-block-cover .header__container {
+  padding: 0 15px;
+}
 .header__wrapper {
   -webkit-backdrop-filter: blur(40px); /* Для поддержки Safari */
   backdrop-filter: blur(40px);
@@ -106,7 +109,7 @@
   line-height: 0.875;
   color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
-  width: 270px;
+  width: 281px;
 }
 .header__search-load {
   display: none;
@@ -153,8 +156,8 @@
   min-height: 40px;
   max-height: 150px;
   overflow-y: scroll;
-  background: #83a3e3;
-  padding: 15px;
+  background: #4475d5;
+  padding: 15px 0;
   z-index: 1;
 }
 
@@ -201,11 +204,11 @@
 }
 
 .header-search__result-list .header-search__result-item:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
 }
 .header-search__result-item {
   border-radius: 8px;
-  padding: 7px 9px;
+  padding: 7px 11px 7px 15px;
   transition: background-color 0.25s ease-in;
   display: flex;
   align-items: center;
@@ -230,15 +233,14 @@
   color: rgba(255, 255, 255, 0.7);
   display: block;
   width: 100%;
-  max-width: 270px;
-  margin-right: 5px;
+  max-width: 290px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .header-search__result-link {
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 15px;
   margin-right: 0;
 }
 .header-search__result-link svg {
