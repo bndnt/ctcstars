@@ -13,7 +13,16 @@
   align-items: center;
   margin-bottom: 152px;
 }
-
+.account__sent-btn.not-allowed {
+  cursor: revert-layer;
+  opacity: 0.8;
+}
+.account__sent-btn.not-allowed:hover svg {
+  fill: white;
+}
+.account__sent-btn.not-allowed:hover span {
+  color: var(--pink);
+}
 .account__image {
   display: flex;
   align-items: center;
