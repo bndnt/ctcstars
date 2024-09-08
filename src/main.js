@@ -266,3 +266,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const windowWidth = window.innerWidth;
+
+  const openFuckingFormButton = document.querySelector('.header__form');
+  // const closeFuckingForm = document.querySelector('');
+  if (windowWidth < 991) {
+    openFuckingFormButton.addEventListener('click', function () {
+      this.classList.add('ouvert');
+    });
+  }
+});
