@@ -13,3 +13,9 @@
 .video-header .header__button-block {
   text-transform: none;
 }
+@media (max-width: 550px) {
+  .body-account .header {
+    width: calc(100vw - 30px) !important;
+    left: 15px !important;
+  }
+}

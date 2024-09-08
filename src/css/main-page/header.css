@@ -69,7 +69,7 @@
     padding: 6px 16px;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 650px) {
   .header.video-header .header__container {
     padding: 0 !important;
   }

@@ -378,7 +378,7 @@
 @media screen and (max-width: 550px) {
   .video-main__container {
     max-width: 345px;
-    padding: 0 15px;
+    padding: 0;
   }
   .video-main__item {
     height: 659px;
@@ -403,6 +403,7 @@
   }
   .video-main__container {
     padding: 0 10px;
+    max-width: 100%;
   }
   .video__btn {
     margin-bottom: 90px;

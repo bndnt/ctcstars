@@ -1224,6 +1224,9 @@
   }
 }
 @media (max-width: 550px) {
+  .application-approved-tooltip .application-approved-tooltiptext {
+    right: 0;
+  }
   .header.account-header {
     height: 53px;
   }
@@ -1262,6 +1265,51 @@
   .support {
     position: static;
     margin: 50px 10px 50px auto;
+  }
+  .support-hint {
+    left: -43px;
+  }
+  .account__form-labels input {
+    height: 60px;
+  }
+  .account__form-labels input::placeholder {
+    font-size: 20px;
+  }
+  .account__form-labels input {
+    font-size: 20px;
+  }
+  .select-button {
+    height: 60px;
+  }
+  .selected-value {
+    font-size: 20px;
+  }
+  .account__select-img {
+    width: 40px;
+    height: 40px;
+  }
+  .account__select-song-info-singer {
+    font-size: 16px;
+  }
+  .account__select-song {
+    font-size: 16px;
+  }
+  .account-typing-error {
+  }
+  .try-again__btn span {
+    font-size: 20px;
+  }
+  .try-again__btn {
+    width: 338px;
+    height: 50px;
+    background-image: url(../../img/try-again-svg-mob.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .try-again__btn svg {
+    display: none;
+  }
+  .button-special {
   }
 }
 @media (max-width: 370px) {
