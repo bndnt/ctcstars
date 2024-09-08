@@ -210,7 +210,7 @@ const controls = `
         <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
         <span role="tooltip" class="plyr__tooltip">00:00</span>
     </div>
-    <div style="display: flex" class="player-flex-block">
+     <div style="display: flex" class="player-flex-block">
     <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
         <svg class="icon--pressed" role="presentation" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M1.57373 1L1.57373 11" stroke="#FF0199" stroke-width="1.6" stroke-linecap="round" />
@@ -222,7 +222,7 @@ const controls = `
         
     </button>
     
-<div style="display: flex"><div class="plyr__time plyr__time--current" aria-label="Current time">00:00</div>
+    <div style="display: flex"><div class="plyr__time plyr__time--current" aria-label="Current time">00:00</div>
     <div class="plyr__time plyr__time--duration" aria-label="Duration">00:00</div></div>
    </div>
 

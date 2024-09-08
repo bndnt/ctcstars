@@ -61,6 +61,7 @@
 }
 .video-main__item .plyr__controls .plyr__controls__item:first-child {
   z-index: 6;
+  margin: 0 5px;
 }
 .video__author-info {
   position: absolute;

@@ -209,7 +209,7 @@
 }
 .header-search__result-item {
   border-radius: 8px;
-  padding: 7px 11px 7px 15px;
+  padding: 6px 11px 4px 15px;
   transition: background-color 0.25s ease-in;
   display: flex;
   align-items: center;
