@@ -325,8 +325,10 @@
     margin: 0 11px 0 auto;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.2s ease-out;
   }
   .header__form.ouvert {
+    -webkit-backdrop-filter: blur(53px);
     backdrop-filter: blur(53px);
     background: rgba(255, 255, 255, 0.16);
     width: 100%;
