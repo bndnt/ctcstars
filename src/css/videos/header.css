@@ -25,6 +25,9 @@
   border-radius: 14px;
   padding: 8px 37px 8px 13px;
 }
+.videos-body .header__wrapper {
+  padding-right: 12px;
+}
 .header__block {
   display: flex;
   align-items: center;
@@ -55,7 +58,7 @@
   padding: 15px;
   transition: background-color 0.25s ease-in;
   height: 44px;
-  margin-left: -32px;
+  /* margin-left: -32px; */
 }
 
 .header__form:hover input::placeholder,
@@ -270,7 +273,7 @@
   transition: fill 0.25s ease-in;
 }
 .header__button-block:hover svg {
-  fill: var(--pink);
+  fill: rgba(255, 255, 255, 0.5);
 }
 .header__button-block:hover {
   color: var(--white);
@@ -394,6 +397,9 @@
   }
   .header-search__result-list {
     top: 56px;
+  }
+  .videos-body .header__wrapper {
+    padding: 6px 9px 6px 0;
   }
 }
 @media screen and (max-width: 370px) {

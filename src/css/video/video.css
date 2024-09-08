@@ -315,18 +315,20 @@
 }
 .share-popup .account-share-socials {
   height: 52px !important;
+  border-radius: 10px 10px 0 0;
 }
 .share-popup .account-share-social svg {
   margin-top: -14px;
 }
 .share-popup-input {
   padding: 12px 15px;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 208px;
   color: #0647c7;
+  background: #e1f0ff;
 }
 .share-popup-input::placeholder {
   font-size: 16px;

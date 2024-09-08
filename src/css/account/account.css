@@ -222,6 +222,7 @@
 .account__select-content {
   display: flex;
   align-items: center;
+  margin-left: -15px;
 }
 .account__select-img {
   border-radius: 4px;
@@ -375,6 +376,7 @@
   font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.35);
+  width: calc(100% - 22px);
 }
 .account-form__label-check p a {
   color: white;
@@ -619,7 +621,8 @@
   margin: 39px auto 0;
 }
 .account__sent-btn span {
-  font-weight: 800;
+  font-family: 'myfontExtraBold';
+
   font-size: 16px;
   line-height: 1;
   /* text-transform: uppercase; */
@@ -938,12 +941,21 @@
 }
 .try-again__btn span {
   color: var(--pink);
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   /* text-transform: uppercase; */
   text-align: center;
   color: #f09;
   font-family: 'myfontExtraBold';
+}
+.try-again__btn svg {
+  fill: white;
+}
+.try-again__btn:hover span {
+  color: white;
+}
+.try-again__btn:hover svg {
+  fill: var(--pink);
 }
 .support-others {
   margin-top: 58px;
@@ -977,7 +989,7 @@
   margin-top: 16px;
 }
 .support-others__btn span {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   /* text-transform: uppercase; */
   text-align: center;
