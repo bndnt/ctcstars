@@ -329,10 +329,10 @@
     padding: 23px 30px 15px 37px;
   }
   .prizes__right-block:first-child .prizes__right-img {
-    left: calc(100% / 11);
+    left: calc(100% / 10 - 5%);
   }
   .prizes__right-block:last-child .prizes__right-img {
-    left: calc(100% / 10 - 3%);
+    left: calc(100% / 10 - 5%);
   }
   .prizes__title {
     margin: 0px auto 40px;
