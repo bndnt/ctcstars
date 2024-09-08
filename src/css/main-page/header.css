@@ -56,9 +56,10 @@
 @media (max-width: 550px) {
   .header {
     height: 53px;
-    width: calc(100vw - 20px) !important;
-    left: 10px !important;
+    width: calc(100vw - 30px) !important;
+    left: 15px !important;
     top: 20px !important;
+    transform: none;
   }
   .header__logo {
     width: 136px;
@@ -69,6 +70,9 @@
   }
 }
 @media (max-width: 370px) {
+  .header.video-header .header__container {
+    padding: 0 !important;
+  }
   .header {
     height: 53px;
     width: calc(100vw - 20px) !important;

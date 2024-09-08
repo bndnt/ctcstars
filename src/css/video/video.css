@@ -377,7 +377,8 @@
 }
 @media screen and (max-width: 550px) {
   .video-main__container {
-    max-width: 340px;
+    max-width: 345px;
+    padding: 0 15px;
   }
   .video-main__item {
     height: 659px;
@@ -388,6 +389,9 @@
   .video__author-img {
     width: 45px;
     height: 45px;
+  }
+  .video__btn {
+    margin-left: calc((100% - 160px) / 2);
   }
 }
 @media (max-width: 370px) {
