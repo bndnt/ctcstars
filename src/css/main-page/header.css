@@ -4,6 +4,12 @@
   left: calc((100vw - 1160px) / 2);
   transform: none; */
 }
+.body-main .header__button-block {
+  width: 91px;
+}
+.body-main .header__wrapper {
+  padding-right: 14px;
+}
 .body-main .header .header__button-block svg {
   fill: rgba(255, 255, 255, 0.3);
 }

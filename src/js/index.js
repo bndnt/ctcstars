@@ -141,6 +141,7 @@ document
     document.querySelector('.top__hamburger').classList.toggle('active');
     document.body.classList.toggle('hidden');
   });
+
 document.addEventListener('DOMContentLoaded', function () {
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -152,14 +153,19 @@ document.addEventListener('DOMContentLoaded', function () {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
+        const targetPosition =
+          targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = targetPosition - window.innerHeight / 3.5;
+
         window.scrollTo({
-          top: targetElement.offsetTop,
+          top: offsetPosition,
           behavior: 'smooth',
         });
       }
     });
   });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   const phoneInput = document.querySelector('.js-phone-input');
 
