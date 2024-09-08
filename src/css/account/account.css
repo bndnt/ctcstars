@@ -1145,6 +1145,13 @@
   .account-info {
     margin-bottom: 0;
   }
+  .support-hint {
+    left: -43px;
+  }
+  .account-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 @media (max-width: 768px) {
   .account {
@@ -1282,9 +1289,7 @@
     position: static;
     margin: 50px 10px 50px auto;
   }
-  .support-hint {
-    left: -43px;
-  }
+
   .account__form-labels input {
     height: 60px;
   }
@@ -1352,5 +1357,9 @@
     height: 206px;
     right: -6px;
     bottom: -6px;
+  }
+  .try-again__btn {
+    width: 100%;
+    height: 43px;
   }
 }

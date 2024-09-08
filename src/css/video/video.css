@@ -213,7 +213,7 @@
   box-sizing: border-box;
   white-space: nowrap;
   /* text-overflow: ellipsis; */
-  overflow: hidden;
+  /* overflow: hidden; */
   animation: marquee 9s linear infinite;
 }
 @keyframes marquee {
@@ -395,6 +395,12 @@
   }
 }
 @media (max-width: 370px) {
+  .video-main {
+    margin-top: 135px;
+  }
+  .video__song-info {
+    padding-bottom: 10px;
+  }
   .video-main__item {
     height: 458px;
   }
@@ -406,10 +412,10 @@
     max-width: 100%;
   }
   .video__btn {
-    margin-bottom: 90px;
+    margin-bottom: 15px;
     margin-left: calc((100% - 160px) / 2);
   }
-  .video-main {
+  /* .video-main {
     margin-top: 104px;
-  }
+  } */
 }

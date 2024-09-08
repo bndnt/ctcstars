@@ -56,9 +56,9 @@
 @media (max-width: 550px) {
   .header {
     height: 53px;
-    width: calc(100vw - 30px) !important;
-    left: 15px !important;
-    top: 20px !important;
+    width: calc(100vw - 30px);
+    left: 15px;
+    top: 20px;
     transform: none;
   }
   .header__logo {
@@ -67,16 +67,5 @@
   }
   .header__wrapper {
     padding: 6px 16px;
-  }
-}
-@media (max-width: 650px) {
-  .header.video-header .header__container {
-    padding: 0 !important;
-  }
-  .header {
-    height: 53px;
-    width: calc(100vw - 20px) !important;
-    left: 10px !important;
-    top: 20px !important;
   }
 }
