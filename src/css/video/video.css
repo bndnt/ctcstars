@@ -378,15 +378,26 @@
 }
 .share-popup {
 }
+.plyr__time + .plyr__time {
+  display: block !important;
+}
+.video-body .plyr__controls .plyr__control {
+  margin: 0 10px 0 15px;
+}
+.video-body .plyr__controls {
+  height: 55px !important;
+}
+@media screen and (max-width: 1100px) {
+  .plyr__controls::after {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 650px) {
   .video-main {
     margin-top: 108px;
   }
 }
 @media screen and (max-width: 550px) {
-  .plyr__controls::after {
-    height: 200px;
-  }
   .video-main {
   }
   .video-main__container {
