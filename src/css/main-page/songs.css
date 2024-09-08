@@ -168,7 +168,6 @@
   }
   .songs__subtitle {
     font-size: 20px;
-    max-width: 100%;
   }
   .songs__list {
     margin-top: 30px;
@@ -230,6 +229,7 @@
   .songs__subtitle {
     font-size: 18px;
     padding: 0 20px;
+    max-width: 100%;
   }
   .songs-show-more {
     margin-top: -18px;
