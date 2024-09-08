@@ -322,7 +322,7 @@
     height: 36px;
     padding: 10px;
     background-color: #638cdd;
-    margin: 0 11px 0 auto;
+    margin: 0 11px 0 auto !important;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.2s ease-out;
