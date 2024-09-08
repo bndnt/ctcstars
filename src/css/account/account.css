@@ -1271,7 +1271,7 @@
     padding: 0;
   }
   .account-data {
-    padding: 34px 17px 26px;
+    padding: 34px 15px 26px;
   }
   .support-others {
     margin: 40px 17px 0 !important;
@@ -1332,6 +1332,9 @@
   }
 }
 @media (max-width: 370px) {
+  .account-data {
+    padding: 34px 10px 26px;
+  }
   .account-error-video__text {
     font-size: 12px;
   }
@@ -1340,7 +1343,7 @@
     padding: 11px 20px 11px 13px;
   }
   .account__upload-video {
-    width: 290px;
+    width: 300px;
     height: 513px;
   }
   .account__sent-information {

@@ -1,8 +1,8 @@
 .body-main .header {
   top: 33px;
-  max-width: 1160px;
+  /* max-width: 1160px;
   left: calc((100vw - 1160px) / 2);
-  transform: none;
+  transform: none; */
 }
 .body-main .header .header__button-block svg {
   fill: rgba(255, 255, 255, 0.3);
@@ -32,22 +32,12 @@
   color: white;
 }
 @media screen and (max-width: 1200px) {
-  .body-main .header {
-    left: 15px !important;
-    transform: none;
-    width: calc(100vw - 30px) !important;
-  }
 }
 @media screen and (max-width: 1110px) {
   .header__nav {
     display: none;
   }
   .body-main .header {
-    /* width: calc(100vw - 15px) !important;
-    left: calc((100vw - 100%) / 2 - 15px) !important; */
-
-    transform: none;
-    top: 30px !important;
   }
   .header__container {
     padding: 0;
@@ -67,5 +57,14 @@
   }
   .header__wrapper {
     padding: 6px 16px;
+  }
+}
+@media (max-width: 370px) {
+  .header {
+    height: 53px;
+    width: calc(100vw - 20px);
+    left: 10px;
+    top: 10px;
+    transform: none;
   }
 }

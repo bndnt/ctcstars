@@ -201,6 +201,7 @@
 @media screen and (max-width: 650px) {
   .videos-result__list {
     justify-content: space-between;
+    padding-bottom: 90px;
   }
   .videos-result__container {
     margin-top: 21px;
@@ -264,5 +265,17 @@
   .videos-result__likes span:nth-child(2) {
     font-size: 8px;
     line-height: 1;
+  }
+}
+@media (max-width: 370px) {
+  .videos-result__container {
+    padding: 0 10px;
+  }
+  .videos-result__list {
+    gap: 10px;
+    padding-bottom: 40px;
+  }
+  .videos-result__item {
+    width: calc(100% / 2 - 5px);
   }
 }

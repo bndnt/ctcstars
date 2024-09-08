@@ -55,10 +55,4 @@
   }
 }
 @media (max-width: 370px) {
-  .video-main {
-    margin-top: 135px;
-  }
-  .video__song-info {
-    padding-bottom: 10px;
-  }
 }
