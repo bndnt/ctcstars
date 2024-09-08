@@ -25,10 +25,8 @@ document.querySelector(".header__search-input").addEventListener("input",functio
 
  </div>
 
-
-
    </div>
 
 </div>
 `;Array.from(document.querySelectorAll(".js-player")).map(o=>new Plyr(o,{controls:d}));document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".plyr").forEach(e=>{const t=e.closest(".video-main__item-cover").querySelector(".video__bottom"),s=new MutationObserver(function(i){i.forEach(n=>{n.type==="attributes"&&n.attributeName==="class"&&(e.classList.contains("plyr--hide-controls")?t.classList.remove("up"):t.classList.add("up"))})});s.observe(e,{attributes:!0}),window.addEventListener("unload",function(){s.disconnect()})})});document.addEventListener("DOMContentLoaded",function(){const o=window.innerWidth,e=document.querySelector(".header__form");o<991&&e.addEventListener("click",function(){this.classList.add("ouvert")})});
-//# sourceMappingURL=main-4sBJY52W.js.map
+//# sourceMappingURL=main-Bl5TnK74.js.map
