@@ -227,8 +227,6 @@ const controls = `
 
  </div>
 
-
-
    </div>
 
 </div>
