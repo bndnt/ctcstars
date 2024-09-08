@@ -81,11 +81,14 @@
     padding-right: 60px;
   }
   .faq__item {
-    height: auto;
+    height: min-content;
+    padding: 23px 41px 23px 39px;
   }
   .ac .ac-trigger::after {
     width: 30px;
     height: 30px;
+    top: 50%;
+    transform: translate(-50, -50%);
   }
   .ac.is-active > .ac-header .ac-trigger::after {
     right: 1px;
@@ -123,8 +126,6 @@
     right: -23.5px;
     width: 21px;
     height: 21px;
-    top: 50%;
-    transform: translate(-50, -50%);
   }
   .ac .ac-panel .ac-text {
     font-size: 14px;

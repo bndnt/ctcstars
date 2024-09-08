@@ -2,11 +2,26 @@
 .account {
   padding: 143px 0 0;
 }
+.body-account {
+  height: 100%;
+}
+.account-wrapper100vh {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.account-main {
+  flex-grow: 1;
+}
+.body-account .footer {
+  margin-top: auto;
+}
 .account-container {
   margin: 0 auto;
   width: 100%;
   max-width: 760px;
 }
+
 .account-info {
   display: flex;
   flex-direction: column;
@@ -1077,6 +1092,7 @@
 
 .footer-account-page {
   position: static;
+  margin-top: auto;
 }
 .footer-account-page .footer__container {
   margin-top: 0;
@@ -1308,8 +1324,6 @@
   }
   .try-again__btn svg {
     display: none;
-  }
-  .button-special {
   }
 }
 @media (max-width: 370px) {

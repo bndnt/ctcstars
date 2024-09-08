@@ -341,8 +341,11 @@
     height: auto;
     flex-wrap: wrap;
     padding: 20px 30px 120px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
+    max-width: 630px;
+    margin: 48px auto 0;
   }
   .winners__block-number {
     width: calc(100% / 3);
@@ -367,8 +370,14 @@
     left: -70px;
   }
   .winners__block-info {
-    width: calc(100% / 2 - 30px);
+    width: 100%;
     margin: 0;
+  }
+  .winners__block-info-f {
+    margin-bottom: 15px;
+  }
+  .winners__block-number-f {
+    margin-right: 30px;
   }
   .winners__block-bear {
     top: auto;
@@ -403,6 +412,8 @@
     font-size: 24px;
     width: 115px;
     height: 48px;
+    left: -59px;
+    top: -9px;
   }
   .winners__block-info {
     width: 100%;
@@ -445,16 +456,13 @@
   .prizes__right-block:last-child .prizes__right-img {
     left: calc(100% / 10 - 5%);
   }
-}
-@media (max-width: 700px) {
-  .winners__title-span-special {
-    top: -13px;
-    font-size: 24px;
-    width: 115px;
-    height: 48px;
-    left: calc(100vw / 4 - 1%);
+  .winners__title-span-first {
+    padding-left: 67px;
+    text-align: center;
+    width: 100%;
   }
 }
+
 @media (max-width: 650px) {
   .winners {
     padding: 50px 0 0;
@@ -462,9 +470,7 @@
   .winners__title-span-first {
     width: 100%;
   }
-  .winners__title-span-special {
-    left: 30%;
-  }
+
   .prizes__title {
     font-size: 36px;
     margin: 50px auto 40px;

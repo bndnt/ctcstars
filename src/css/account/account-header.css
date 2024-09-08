@@ -13,6 +13,13 @@
 .video-header .header__button-block {
   text-transform: none;
 }
+.body-account .header__button-block {
+  width: 91px;
+}
+
+.body-account .header__block {
+  padding-right: 12px;
+}
 @media (max-width: 550px) {
   .body-account .header {
     width: calc(100vw - 30px) !important;
