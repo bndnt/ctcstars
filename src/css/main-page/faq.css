@@ -88,7 +88,7 @@
     width: 30px;
     height: 30px;
     top: 50%;
-    transform: translate(-50, -50%);
+    transform: translate(0, -50%);
   }
   .ac.is-active > .ac-header .ac-trigger::after {
     right: 1px;
