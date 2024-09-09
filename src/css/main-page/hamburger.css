@@ -76,20 +76,20 @@
   position: fixed;
   right: -100%;
   top: -100%;
-  border-radius: 27px 0 27px 27px;
+  border-radius: 0 0 27px 27px;
   min-width: 250px;
   background: #0647c7;
   display: block;
-  width: 67vw;
+  width: 100vw;
   height: 430px;
   z-index: 7;
-  padding: 70px 55px 25px;
+  padding: 49px 55px 25px;
   transition: all 0.2s linear;
   opacity: 0;
 }
 .top__hamburger.active {
   top: 0;
-  left: auto;
+  left: 0;
   right: 0;
   bottom: 0;
 
@@ -133,8 +133,9 @@
 }
 .top__hamburger-logo {
   margin: 0 auto;
-  width: 163px;
-  height: 49px;
+
+  width: 220.39px;
+  height: 66.25px;
 }
 .top__hamburger-logo a img {
   object-fit: cover;
@@ -174,7 +175,8 @@
     display: block;
   }
   .top__hamburger ul li a {
-    line-height: 1;
+    line-height: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 370px) {
