@@ -953,6 +953,7 @@
 }
 .try-again__text a {
   text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 .try-again__btn {
   width: 260px;
