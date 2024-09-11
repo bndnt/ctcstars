@@ -319,6 +319,7 @@
   background: rgba(255, 255, 255, 0.1);
   display: block;
   color: #fff;
+  font-family: 'myfontRegular';
 }
 .account__form-labels input:focus-within::placeholder {
   color: rgba(255, 255, 255, 0.1);
