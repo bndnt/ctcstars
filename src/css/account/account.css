@@ -639,8 +639,7 @@
 }
 .account__sent-btn span {
   font-family: 'myfontExtraBold';
-
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   /* text-transform: uppercase; */
   text-align: center;
