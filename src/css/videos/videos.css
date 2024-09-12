@@ -3,7 +3,10 @@
 
 .videos-body .videos-main-block-cover {
   /* margin-top: 164px; */
-  /* height: 100vh; */
+  height: 100vh;
+}
+.body-account .videos-main-block-cover {
+  height: 100%;
 }
 .videos-cover-main {
   margin-top: 148px;
