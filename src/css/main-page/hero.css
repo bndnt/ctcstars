@@ -26,12 +26,9 @@
   object-fit: cover;
 }
 .hero__bottom {
-  margin-top: 853px;
+  margin-top: 727px;
 }
 @media (min-width: 1440px) {
-  .hero__bottom {
-    margin-top: 868px;
-  }
 }
 .hero .join__btns {
   flex-direction: row;
@@ -68,7 +65,7 @@
     left: 57.5%;
   }
   .hero__bottom {
-    margin-top: 787px;
+    margin-top: 640px;
   }
 }
 @media (max-width: 768px) {
@@ -79,7 +76,7 @@
     left: 57.5%;
   }
   .hero__bottom {
-    margin-top: 591px;
+    margin-top: 414px;
   }
 }
 @media (max-width: 650px) {
@@ -94,7 +91,7 @@
     left: 57.5%;
   }
   .hero__bottom {
-    margin-top: 527px;
+    margin-top: 410px;
   }
 }
 @media (max-width: 550px) {
@@ -112,7 +109,7 @@
     top: -27.5%;
   }
   .hero__bottom {
-    margin-top: 506px;
+    margin-top: 375px;
   }
   .hero .join__btns {
     gap: 10px;

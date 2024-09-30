@@ -5,6 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
@@ -30,7 +32,7 @@
               <ul class="header__list">
                 <li><a href="#rules">Правила конкурса</a></li>
                 <li><a href="#prizes">Призы</a></li>
-                <li><a href="#voting">Как проголосовать</a></li>
+                <li><a href="#voting">Вопросы и ответы</a></li>
               </ul>
               <button
                 class="header__button-block header__button-real js-header__button-block"
@@ -73,7 +75,7 @@
           </li>
 
           <li>
-            <a href="#prizes">Как проголосовать</a>
+            <a href="#prizes">Вопросы и ответы</a>
           </li>
           <li>
             <a href="#voting"> Призы</a>
@@ -101,7 +103,8 @@
     </div>
 
     <main>
-      <load src="./partials/main-page/hero.html" />
+      <load src="./partials/main-page/newhero.html" />
+      <load src="./partials/main-page/real-winners.html" />
       <div class="prizes">
         <div class="container">
           <div id="prizes" class="prizes__title">
@@ -138,7 +141,7 @@
           </div>
         </div>
       </div>
-      <load src="./partials/main-page/rules.html" />
+
       <load src="./partials/main-page/songs.html" />
       <load src="./partials/main-page/winers.html" />
       <load src="./partials/main-page/faq.html" />
@@ -452,5 +455,6 @@
     <script type="module" src="./login.js"></script>
 
     <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
   </body>
 </html>

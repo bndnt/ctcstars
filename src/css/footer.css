@@ -75,9 +75,8 @@
   margin-bottom: 14px;
 }
 .footer__polit a {
-  font-family: 'myfontLight';
+  font-family: 'myfontRegular';
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1;
   color: rgba(6, 71, 199, 0.7);

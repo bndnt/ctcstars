@@ -2,8 +2,7 @@
 @import url('./videos-result.css');
 
 .videos-body .videos-main-block-cover {
-  /* margin-top: 164px; */
-  height: 100vh;
+  height: 100%;
 }
 .body-account .videos-main-block-cover {
   height: 100%;

@@ -24,12 +24,13 @@
   display: block;
   content: '';
   width: 100%;
-  height: 231px;
+  height: 182px;
   position: absolute;
   bottom: 0;
   z-index: 1;
   background-image: url(../../img/videobg.svg);
   background-size: cover;
+  display: none;
 }
 .videos-result__video {
   width: 100%;
