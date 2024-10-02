@@ -256,7 +256,7 @@
   color: #0073e6;
   position: relative;
   z-index: 7;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.212;
   text-align: center;
 }
@@ -494,6 +494,9 @@
   }
   .hero__bottom {
     display: block;
+  }
+  .bear {
+    left: calc(100% / 4 - 100px);
   }
 }
 @media screen and (max-width: 1200px) {
