@@ -78,7 +78,7 @@
   top: -120px;
   width: 271px;
   height: 202px;
-  background-image: url(../img/bear/cloud-top.svg);
+  background-image: url(../img/bear/cloud-top.png);
   background-repeat: no-repeat;
   background-size: contain;
   left: 50%;
@@ -95,7 +95,7 @@
   bottom: -120px;
   width: 185px;
   height: 193px;
-  background-image: url(../img/bear/cloud-star.svg);
+  background-image: url(../img/bear/cloud-star.png);
   background-repeat: no-repeat;
   background-size: contain;
   left: 50%;
@@ -475,6 +475,18 @@
 }
 .videos-result__item video {
   object-fit: cover;
+}
+.hero__bottom {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1440px) {
+  .new-hero__btn {
+    margin-left: calc((100% - 320px) / 2 + 4%);
+  }
+  .hero__bottom {
+    display: block;
+  }
 }
 @media screen and (max-width: 1200px) {
   .real-winners__title {
